@@ -3,20 +3,17 @@
 ## 1. Business Overview
 
 ### Business Purpose
-
 The Payment & Billing Management system serves as the financial backbone of the TC platform, handling all monetary transactions, billing cycles, and financial reporting. It ensures secure, compliant, and efficient processing of payments while providing transparent financial management for all stakeholders.
 
 ### Value Proposition
-
 - **Multi-Gateway Processing**: Support for multiple payment processors ensuring transaction reliability
 - **Automated Billing**: Recurring billing cycles with intelligent retry logic and failure handling
 - **Financial Transparency**: Real-time payment tracking and comprehensive financial reporting
 - **Compliance Assurance**: PCI DSS compliance and regulatory adherence for financial data security
 - **Flexible Payment Options**: Support for credit cards, ACH transfers, and alternative payment methods
-- **Revenue Optimization**: billing strategies and payment plan management
+- **Revenue Optimization**: Advanced billing strategies and payment plan management
 
 ### Business Impact
-
 - **Revenue Assurance**: 99.5% payment processing reliability with automated retry mechanisms
 - **Administrative Efficiency**: 80% reduction in manual billing tasks through automation
 - **Cash Flow Improvement**: 35% faster payment collection through optimized billing cycles
@@ -24,7 +21,6 @@ The Payment & Billing Management system serves as the financial backbone of the 
 - **Customer Satisfaction**: 95% payment experience satisfaction through flexible options
 
 ### Key Stakeholders
-
 - **Students/Parents**: Payment method management and billing transparency
 - **Teachers**: Payment receipt tracking and compensation visibility
 - **School Administrators**: Financial oversight and revenue management
@@ -34,11 +30,9 @@ The Payment & Billing Management system serves as the financial backbone of the 
 ## 2. User Roles & Financial Permissions
 
 ### 2.1 Student/Parent Payment Management
-
 **Business Purpose**: Enable secure and convenient payment method management with transparent billing visibility.
 
 **Payment Capabilities**:
-
 - **Payment Method Management**: Add, update, and remove credit cards and bank accounts
 - **Billing History**: Access complete payment history with detailed transaction records
 - **Payment Plan Options**: Select from available payment plans and billing frequencies
@@ -47,18 +41,15 @@ The Payment & Billing Management system serves as the financial backbone of the 
 - **Dispute Resolution**: Initiate payment disputes and refund requests through secure channels
 
 **Financial Visibility**:
-
 - Real-time billing status and upcoming payment schedules
 - Detailed invoice breakdown with service descriptions and pricing
 - Payment method security status and expiration notifications
 - Refund and credit tracking with transparent processing timelines
 
 ### 2.2 Teacher Payment Tracking
-
 **Business Purpose**: Provide teachers with visibility into lesson-related payments and compensation tracking.
 
 **Compensation Visibility**:
-
 - **Lesson Payment Status**: Track payment status for completed lessons
 - **Compensation Calculations**: View earnings calculations based on lesson completion and rates
 - **Payment Schedule**: Access payment schedule and expected compensation dates
@@ -68,11 +59,9 @@ The Payment & Billing Management system serves as the financial backbone of the 
 **Business Justification**: Teachers need visibility into payment status to understand compensation timing and resolve any payment-related issues.
 
 ### 2.3 School Administrator Financial Control
-
 **Business Purpose**: Comprehensive financial management and oversight for school operations.
 
 **Financial Management Capabilities**:
-
 - **Revenue Analytics**: Access detailed revenue reports and financial performance metrics
 - **Payment Processing Control**: Configure payment gateways and processing preferences
 - **Billing Configuration**: Set up payment plans, pricing structures, and billing cycles
@@ -85,16 +74,13 @@ The Payment & Billing Management system serves as the financial backbone of the 
 ### 3.1 Payment Method Registration & Management
 
 #### New Payment Method Registration
-
 1. **Payment Method Addition**:
-
    - User selects payment method type (credit card, bank account, digital wallet)
    - Enters payment information through secure, encrypted forms
    - System validates payment method with processor for authenticity
    - Payment method stored with tokenization for security compliance
 
 2. **Verification Process**:
-
    - Small verification charge processed and immediately refunded
    - Bank account verification through micro-deposits or instant verification
    - User confirms verification to activate payment method
@@ -107,9 +93,7 @@ The Payment & Billing Management system serves as the financial backbone of the 
    - Multi-factor authentication for high-value payment method additions
 
 #### Payment Method Updates & Maintenance
-
 1. **Automatic Updates**:
-
    - Credit card updater service maintains current card information
    - Automatic notification of expiring payment methods
    - Seamless transition to updated payment information
@@ -124,16 +108,13 @@ The Payment & Billing Management system serves as the financial backbone of the 
 ### 3.2 Billing Cycle Management
 
 #### Recurring Billing Process
-
 1. **Billing Schedule Execution**:
-
    - Automated billing cycle initiation based on configured schedules
    - Invoice generation with detailed service descriptions and pricing
    - Payment processing attempt using primary payment method
    - Real-time transaction status monitoring and logging
 
 2. **Payment Processing Logic**:
-
    - Primary payment method processing with immediate status feedback
    - Automatic fallback to backup payment methods upon failure
    - Intelligent retry logic with progressive delay intervals
@@ -146,16 +127,13 @@ The Payment & Billing Management system serves as the financial backbone of the 
    - Account status updates and service suspension protocols
 
 #### Payment Failure Recovery
-
 1. **Automated Recovery Process**:
-
    - Multiple retry attempts with increasing intervals (24 hours, 72 hours, 7 days)
    - Alternative payment method attempts for registered backup options
    - Intelligent routing to different payment processors for optimization
    - Account status management during recovery period
 
 2. **Customer Communication**:
-
    - Immediate failure notification with clear resolution instructions
    - Progressive reminder sequence with escalating urgency
    - Payment method update assistance and customer support integration
@@ -170,9 +148,7 @@ The Payment & Billing Management system serves as the financial backbone of the 
 ### 3.3 Refund & Dispute Management
 
 #### Refund Processing Workflow
-
 1. **Refund Request Initiation**:
-
    - Customer or administrator initiates refund request
    - Refund reason selection and supporting documentation
    - Automatic eligibility verification based on refund policies
@@ -185,9 +161,7 @@ The Payment & Billing Management system serves as the financial backbone of the 
    - Customer notification of refund completion and timeline
 
 #### Dispute Resolution Process
-
 1. **Dispute Documentation**:
-
    - Comprehensive dispute information collection and documentation
    - Evidence gathering and transaction history compilation
    - Customer communication log and resolution attempt tracking
@@ -203,8 +177,7 @@ The Payment & Billing Management system serves as the financial backbone of the 
 
 ### 4.1 Payment Method Validation & Security
 
-#### **Payment Method Validation Matrix**
-
+#### **Advanced Payment Method Validation Matrix**
 ```
 Business Logic: Multi-Layer Payment Method Security
 CheckExist(cardNumber, userID, paymentMethodId, paymentGateway):
@@ -229,7 +202,6 @@ CheckExistACHEFT(checkAccount, checkAba, userID, paymentMethodId):
 ```
 
 #### **Dynamic Payment Gateway Selection Algorithm**
-
 ```
 Business Rule: GetPaymentGatewayId(schoolId, teacherId) - Multi-Tier Selection Logic
 
@@ -263,7 +235,6 @@ Business Justification:
 ```
 
 #### **Payment Method Security & Compliance Framework**
-
 ```
 Business Rule: Multi-Factor Payment Security Validation
 
@@ -296,7 +267,6 @@ END IF
 ```
 
 #### **ACH Method Validation**
-
 ```
 Business Logic: CheckAchMethod(token, memberId)
 Returns: 0 = Not Approved, 1 = Approved, 2 = Pending
@@ -308,7 +278,6 @@ Returns: 0 = Not Approved, 1 = Approved, 2 = Pending
 ### 4.2 Automated Billing & Recurring Payment Logic
 
 #### **Recurring Billing Calculation**
-
 ```
 Business Logic: CaculateNextRecurringDate(DateTime dt)
 - Week-Based Calculation: Uses GetFirstDayOfWeek(dt, DayOfWeek.Sunday)
@@ -317,8 +286,7 @@ Business Logic: CaculateNextRecurringDate(DateTime dt)
 - Business Rule: Consistent billing dates improve cash flow predictability
 ```
 
-#### **Payment Processing Orchestration**
-
+#### **Advanced Payment Processing Orchestration**
 ```
 Business Rule: AutoChargeOrderTZPay(StudentPlanHistory, isReCharge, ownerOfOrderId)
 
@@ -366,7 +334,6 @@ END IF
 ```
 
 #### **Intelligent Payment Retry & Recovery System**
-
 ```
 Business Logic: Multi-Gateway Retry with Adaptive Learning
 
@@ -395,7 +362,6 @@ END IF
 ```
 
 #### **Payment Failure Recovery**
-
 ```
 Business Logic: SaveFailPaymentProcess(paymentProcessId, errorCode)
 - Status Update: Sets StatusID = TransactionStatus.Failed
@@ -405,10 +371,9 @@ Business Logic: SaveFailPaymentProcess(paymentProcessId, errorCode)
 - Business Purpose: Enables automated retry and customer communication
 ```
 
-### 4.2 Billing Calculation & Recurring Payment Orchestration
+### 4.2 Advanced Billing Calculation & Recurring Payment Orchestration
 
 #### **Complex Billing Calculation Engine**
-
 ```
 Business Logic: Multi-Factor Billing Calculation with Dynamic Adjustments
 
@@ -450,7 +415,6 @@ UpdateBillingGroupStudent(models, userId, timeOffset):
 ```
 
 #### **Intelligent Recurring Payment Management**
-
 ```
 Business Logic: CalculateRecurringToByPlanEndDate(planId, recurringFrom, recurringToOriginal)
 
@@ -484,7 +448,6 @@ UpdatePaymentMethod(memberBillingId, paymentMethodId, userId, defaultTZPayMethod
 ### 4.3 Refund Processing & Financial Reconciliation
 
 #### **Refund Amount Validation**
-
 ```
 Business Logic: SaveNewRefundAmount(objPayment, refundAmount, refundTransactionId, ...)
 Validation Rules:
@@ -497,16 +460,14 @@ Validation Rules:
 ```
 
 #### **Refund Status Management**
-
 - **Pending Refunds**: Partial refunds maintain pending status until fully processed
 - **Complete Refunds**: Full refunds immediately update to processed status
 - **Refund Tracking**: Comprehensive audit trail for all refund transactions
 - **Currency Handling**: All refunds processed in USD (Currency.USD)
 
-### 4.4 Payment Integration & Cross-System Orchestration
+### 4.4 Advanced Payment Integration & Cross-System Orchestration
 
 #### **Attendance-Based Billing Integration**
-
 ```
 Business Logic: Seamless Integration with Scheduling and Attendance Systems
 
@@ -538,7 +499,6 @@ UpdateBillingGroupStudent(models, userId, timeOffset):
 ```
 
 #### **Multi-Tenant Payment Configuration Management**
-
 ```
 Business Logic: School-Specific Payment Gateway and Policy Management
 
@@ -569,14 +529,13 @@ ELSE
 END IF
 ```
 
-### 4.5 Payment Reporting & Analytics
+### 4.5 Payment Reporting & Advanced Analytics
 
 #### **Comprehensive Payment Transaction Analysis**
-
 ```
 Business Logic: GetALlPaymentReporting(PaymentTransactionListParam, clientTime, teacherId)
 
-Filter Parameters:
+Advanced Filter Parameters:
 - Student Name: Partial match filtering with fuzzy search capabilities
 - Date Range: Flexible date filtering with timezone adjustments (clientTime offset)
 - Payment Status: Success, Failed, Pending, Refunded, Disputed
@@ -599,64 +558,50 @@ Business Intelligence Metrics:
 - Seasonal Payment Trends: Revenue patterns and seasonal adjustment recommendations
 - Risk Assessment: Fraud detection metrics and chargeback prevention analytics
 ```
-
 - Status ID: Payment status filtering
 - Date Range: From/To date filtering with timezone conversion
 - Teacher Filter: Teacher-specific payment filtering
 - Payment Method: Specific payment method filtering
 - Plan Type: Lesson plan type filtering
-
 ```
 
 #### **Future Payment Integration**
 ```
-
 Business Logic: GetALlPaymentReportingMergeFuture(..., out futurePaymentTotalAmount)
-
 - Future Payment Calculation: Calculates upcoming payment obligations
 - Cash Flow Forecasting: Provides future revenue projections
 - Business Intelligence: Enables proactive financial planning
-
 ```
 
 ### 4.5 Payment Method Management
 
 #### **Payment Method Updates**
 ```
-
 Business Logic: UpdatePaymentMethod(id, teacherId, paymentOtherMethodID, defaultTZPayMethod)
-
 - Method Switching: Allows changing payment methods for existing plans
 - Teacher Association: Links payment methods to specific teachers
 - Default Method Management: Manages primary payment method designation
 - Business Rule: Payment method changes apply to future transactions only
-
 ```
 
 #### **Billing Information Management**
 ```
-
 Business Logic: SaveBilling(BillingInfo obj, long userID)
-
 - Billing Profile Creation: Creates comprehensive billing profiles
 - Address Validation: Validates billing addresses for payment processing
 - Tax Calculation: Integrates with tax calculation systems
 - Compliance: Ensures billing information meets regulatory requirements
-
 ```
 
 ### 4.6 Transaction Status & Error Handling
 
 #### **Transaction Status Workflow**
 ```
-
 Status Progression:
-
 1. TransactionStatus.Pending: Initial transaction state
 2. TransactionStatus.Processed: Successful payment completion
 3. TransactionStatus.Failed: Payment failure with error code
 4. TransactionStatus.Refunded: Full or partial refund processed
-
 ```
 
 #### **Error Code Management**
@@ -740,4 +685,3 @@ Status Progression:
 **Document Status**: ✅ COMPREHENSIVE - Complete business requirements defined
 **Last Updated**: 2025-07-21
 **Version**: 1.0
-```

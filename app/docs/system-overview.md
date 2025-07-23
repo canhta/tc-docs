@@ -10,32 +10,32 @@ The platform's true power lies in its integrated workflows and strategic busines
 
 **Operational Workflows:**
 
-- **[Comprehensive Business Workflows](./comprehensive-business-workflows.md)** - End-to-end business scenarios and integration examples
-- **[Teacher Workflow Documentation](./teacher-workflow-documentation.md)** - Teacher-focused operational scenarios and professional development
-- **[Administrator Workflow Documentation](./administrator-workflow-documentation.md)** - Strategic management and business intelligence workflows
+- **[Comprehensive Business Workflows](./comprehensive-business-workflows)** - End-to-end business scenarios and integration examples
+- **[Teacher Workflow Documentation](./teacher-workflow-documentation)** - Teacher-focused operational scenarios and professional development
+- **[Administrator Workflow Documentation](./administrator-workflow-documentation)** - Strategic management and business intelligence workflows
 
 **Strategic Business Intelligence:**
 
-- **[Business Metrics & KPI Dashboard](./business-metrics-kpi-dashboard.md)** - Comprehensive performance measurement and analytics framework
-- **[Implementation & Deployment Strategy](./implementation-deployment-strategy.md)** - Complete roadmap for successful platform adoption
-- **[Competitive Analysis & Market Positioning](./competitive-analysis-market-positioning.md)** - Strategic market intelligence and competitive advantages
-- **[Executive Summary Strategic Intelligence](./executive-summary-strategic-intelligence.md)** - Leadership overview and strategic transformation achievements
+- **[Business Metrics & KPI Dashboard](./business-metrics-kpi-dashboard)** - Comprehensive performance measurement and analytics framework
+- **[Implementation & Deployment Strategy](./implementation-deployment-strategy)** - Complete roadmap for successful platform adoption
+- **[Competitive Analysis & Market Positioning](./competitive-analysis-market-positioning)** - Strategic market intelligence and competitive advantages
+- **[Executive Summary Strategic Intelligence](./executive-summary-strategic-intelligence)** - Leadership overview and strategic transformation achievements
 
 **Intelligence Frameworks:**
 
-- **[Financial Modeling Framework](./advanced-financial-modeling-framework.md)** - Sophisticated financial models and predictive analytics
-- **[Customer Journey Analytics & Optimization](./customer-journey-analytics-optimization.md)** - AI-powered customer experience optimization
-- **[AI & Machine Learning Framework](./advanced-ai-machine-learning-framework.md)** - Revolutionary AI capabilities and intelligent automation
-- **[Innovation Labs & Future Technology Roadmap](./innovation-labs-future-technology-roadmap.md)** - Visionary exploration of breakthrough technologies
+- **[Financial Modeling Framework](./advanced-financial-modeling-framework)** - Sophisticated financial models and predictive analytics
+- **[Customer Journey Analytics & Optimization](./customer-journey-analytics-optimization)** - AI-powered customer experience optimization
+- **[AI & Machine Learning Framework](./ai-machine-learning-framework)** - Revolutionary AI capabilities and intelligent automation
+- **[Innovation Labs & Future Technology Roadmap](./innovation-labs-future-technology-roadmap)** - Visionary exploration of breakthrough technologies
 
 **Master Navigation:**
 
-- **[Strategic Intelligence Master Index](./strategic-intelligence-master-index.md)** - Ultimate navigation and comprehensive overview of all strategic resources
+- **[Strategic Intelligence Master Index](./strategic-intelligence-master-index)** - Ultimate navigation and comprehensive overview of all strategic resources
 
 **Quality Assurance & Validation:**
 
-- **[Cross-Reference Validation](./cross-reference-validation.md)** - Documentation integrity and integration analysis
-- **[Quality Assurance Audit](./quality-assurance-audit.md)** - Comprehensive documentation quality assessment
+- **[Cross-Reference Validation](./cross-reference-validation)** - Documentation integrity and integration analysis
+- **[Quality Assurance Audit](./quality-assurance-audit)** - Comprehensive documentation quality assessment
 
 ## Architecture Overview
 
@@ -61,7 +61,7 @@ The platform's true power lies in its integrated workflows and strategic busines
 
 ## User Roles & Security Hierarchy
 
-_For complete role definitions, permissions, and management features, see [User Management & Authentication PRD](./user-management-authentication-prd.md)_
+_For complete role definitions, permissions, and management features, see [User Management & Authentication PRD](./user-management-authentication)_
 
 ### Role System (Security Levels)
 
@@ -77,7 +77,7 @@ _For complete role definitions, permissions, and management features, see [User 
 
 ### 1. User Management & Authentication
 
-**Documentation:** [User Management & Authentication PRD](./user-management-authentication-prd.md)
+**Documentation:** [User Management & Authentication PRD](./user-management-authentication)
 **Primary Purpose:** User lifecycle and access control
 
 #### Key Features:
@@ -93,7 +93,7 @@ _For complete role definitions, permissions, and management features, see [User 
 
 ### 2. Course & Lesson Management
 
-**Documentation:** [Course & Lesson Management PRD](./course-lesson-management-prd.md)
+**Documentation:** [Course & Lesson Management PRD](./course-lesson-management)
 **Primary Purpose:** Educational content creation and delivery
 
 #### Key Features:
@@ -109,7 +109,7 @@ _For complete role definitions, permissions, and management features, see [User 
 
 ### 3. Scheduling & Calendar Management
 
-**Documentation:** [Scheduling & Calendar Management PRD](./scheduling-calendar-management-prd.md)
+**Documentation:** [Scheduling & Calendar Management PRD](./scheduling-calendar-management)
 **Primary Purpose:** Lesson scheduling and calendar coordination
 
 #### Key Features:
@@ -125,7 +125,7 @@ _For complete role definitions, permissions, and management features, see [User 
 
 ### 4. Payment & Billing Management
 
-**Documentation:** [Payment & Billing Management PRD](./payment-billing-management-prd.md)
+**Documentation:** [Payment & Billing Management PRD](./payment-billing-management)
 **Primary Purpose:** Financial transactions and billing
 
 #### Key Features:
@@ -141,7 +141,7 @@ _For complete role definitions, permissions, and management features, see [User 
 
 ### 5. Communication System
 
-**Documentation:** [Communication System PRD](./communication-system-prd.md)
+**Documentation:** [Communication System PRD](./communication-system)
 **Primary Purpose:** Multi-channel communication and notifications
 
 #### Key Features:
@@ -157,7 +157,7 @@ _For complete role definitions, permissions, and management features, see [User 
 
 ### 6. Homework & Assignment Management
 
-**Documentation:** [Homework & Assignment Management PRD](./homework-assignment-management-prd.md)
+**Documentation:** [Homework & Assignment Management PRD](./homework-assignment-management)
 **Primary Purpose:** Assignment creation, distribution, and tracking
 
 #### Key Features:
@@ -173,7 +173,7 @@ _For complete role definitions, permissions, and management features, see [User 
 
 ### 7. Reporting & Analytics
 
-**Documentation:** [Reporting & Analytics PRD](./reporting-analytics-prd.md)
+**Documentation:** [Reporting & Analytics PRD](./reporting-analytics)
 **Primary Purpose:** Business intelligence and performance measurement
 
 #### Key Features:
@@ -191,32 +191,32 @@ _For complete role definitions, permissions, and management features, see [User 
 
 ### 8. Group Management
 
-**Documentation:** [Group Management PRD](./group-management-prd.md)
+**Documentation:** [Group Management PRD](./group-management)
 **Purpose:** Group lesson and ensemble management
 
 ### 9. Store & E-commerce Management
 
-**Documentation:** [Store & E-commerce PRD](./store-ecommerce-prd.md)
+**Documentation:** [Store & E-commerce PRD](./store-ecommerce)
 **Purpose:** E-commerce and retail functionality
 
 ### 10. Payroll & Teacher Compensation
 
-**Documentation:** [Payroll & Teacher Compensation PRD](./payroll-teacher-compensation-prd.md)
+**Documentation:** [Payroll & Teacher Compensation PRD](./payroll-teacher-compensation)
 **Purpose:** Teacher compensation and payroll
 
 ### 11. File Management & Storage
 
-**Documentation:** [File Management & Storage PRD](./file-management-storage-prd.md)
+**Documentation:** [File Management & Storage PRD](./file-management-storage)
 **Purpose:** Comprehensive file handling and cloud storage
 
 ### 12. Learning Center
 
-**Documentation:** [Learning Center PRD](./learning-center-prd.md)
+**Documentation:** [Learning Center PRD](./learning-center)
 **Purpose:** Centralized educational hub and learning management
 
 ### 13. Search & Discovery
 
-**Documentation:** [Search & Discovery PRD](./search-discovery-prd.md)
+**Documentation:** [Search & Discovery PRD](./search-discovery)
 **Purpose:** Comprehensive search and content discovery
 
 ## Business Value & Benefits

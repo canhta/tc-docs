@@ -21,7 +21,7 @@ The Payroll & Teacher Compensation module serves as the financial backbone of th
 
 ## User Roles & Permissions
 
-_For complete role definitions and hierarchy, see [User Management & Authentication PRD](./user-management-authentication-prd.md)_
+_For complete role definitions and hierarchy, see [User Management & Authentication PRD](./user-management-authentication)_
 
 ### Primary Actors
 

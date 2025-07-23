@@ -37,7 +37,7 @@ The Group Management system operates on the principle that well-coordinated grou
 
 ## User Roles & Permissions
 
-_For complete role definitions and hierarchy, see [User Management & Authentication PRD](./user-management-authentication-prd.md#user-roles--hierarchy)_
+_For complete role definitions and hierarchy, see [User Management & Authentication PRD](./user-management-authentication.md#user-roles--hierarchy)_
 
 ### Primary Actors
 
@@ -627,11 +627,11 @@ Business Value:
 
 ### Internal System Dependencies
 
-- **[Scheduling & Calendar Management](./scheduling-calendar-management-prd.md)**: Group lesson scheduling and resource coordination
-- **[Payment & Billing Management](./payment-billing-management-prd.md)**: Group billing models and payment processing
-- **[User Management & Authentication](./user-management-authentication-prd.md)**: Role-based access and group permissions
-- **[Homework & Assignment Management](./homework-assignment-management-prd.md)**: Group assignment distribution and tracking
-- **[Communication System](./communication-system-prd.md)**: Group notifications and member communications
+- **[Scheduling & Calendar Management](./scheduling-calendar-management)**: Group lesson scheduling and resource coordination
+- **[Payment & Billing Management](./payment-billing-management)**: Group billing models and payment processing
+- **[User Management & Authentication](./user-management-authentication)**: Role-based access and group permissions
+- **[Homework & Assignment Management](./homework-assignment-management)**: Group assignment distribution and tracking
+- **[Communication System](./communication-system)**: Group notifications and member communications
 
 ### External System Integration
 

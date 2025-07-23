@@ -37,7 +37,7 @@ The Store & E-commerce system operates on the principle that integrated retail s
 
 ## User Roles & Permissions
 
-_For complete role definitions and hierarchy, see [User Management & Authentication PRD](./user-management-authentication-prd.md#user-roles--hierarchy)_
+_For complete role definitions and hierarchy, see [User Management & Authentication PRD](./user-management-authentication.md#user-roles--hierarchy)_
 
 ### Primary Actors
 
@@ -300,10 +300,10 @@ _For complete role definitions and hierarchy, see [User Management & Authenticat
 
 ### Internal System Dependencies
 
-- **[Payment & Billing Management](./payment-billing-management-prd.md)**: Payment processing, billing integration, and financial reporting
-- **[User Management & Authentication](./user-management-authentication-prd.md)**: Customer authentication, role-based access, and permission management
-- **[Communication System](./communication-system-prd.md)**: Order confirmations, shipping notifications, and customer communications
-- **[Reporting & Analytics](./reporting-analytics-prd.md)**: Sales analytics, inventory reports, and business intelligence
+- **[Payment & Billing Management](./payment-billing-management)**: Payment processing, billing integration, and financial reporting
+- **[User Management & Authentication](./user-management-authentication)**: Customer authentication, role-based access, and permission management
+- **[Communication System](./communication-system)**: Order confirmations, shipping notifications, and customer communications
+- **[Reporting & Analytics](./reporting-analytics)**: Sales analytics, inventory reports, and business intelligence
 
 ### External System Integration
 

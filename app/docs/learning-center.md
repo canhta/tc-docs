@@ -35,7 +35,7 @@ The Learning Center operates on the educational principle that engaged, self-dir
 
 ## User Roles & Permissions
 
-_For complete role definitions and hierarchy, see [User Management & Authentication PRD](./user-management-authentication-prd.md#user-roles--hierarchy)_
+_For complete role definitions and hierarchy, see [User Management & Authentication PRD](./user-management-authentication.md#user-roles--hierarchy)_
 
 ### Primary Actors
 
@@ -299,11 +299,11 @@ _For complete role definitions and hierarchy, see [User Management & Authenticat
 
 ### Internal System Dependencies
 
-- **[User Management & Authentication](./user-management-authentication-prd.md)**: Role-based access control and permission validation
-- **[Course & Lesson Management](./course-lesson-management-prd.md)**: Content structure, course progression, and learning materials
-- **[Homework & Assignment Management](./homework-assignment-management-prd.md)**: Assignment creation, distribution, and tracking
-- **[Communication System](./communication-system-prd.md)**: Assignment notifications and progress updates
-- **[Reporting & Analytics](./reporting-analytics-prd.md)**: Learning analytics and performance insights
+- **[User Management & Authentication](./user-management-authentication)**: Role-based access control and permission validation
+- **[Course & Lesson Management](./course-lesson-management)**: Content structure, course progression, and learning materials
+- **[Homework & Assignment Management](./homework-assignment-management)**: Assignment creation, distribution, and tracking
+- **[Communication System](./communication-system)**: Assignment notifications and progress updates
+- **[Reporting & Analytics](./reporting-analytics)**: Learning analytics and performance insights
 
 ### External System Integration
 
