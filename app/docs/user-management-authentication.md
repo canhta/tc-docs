@@ -3,9 +3,11 @@
 ## 1. Business Overview
 
 ### Business Purpose
+
 The User Management & Authentication system serves as the foundational security and access control layer for the TC music education platform. It manages the complete lifecycle of all stakeholders in the music education ecosystem, from initial registration through ongoing engagement and eventual account closure.
 
 ### Value Proposition
+
 - **Centralized Identity Management**: Single source of truth for all user identities and relationships
 - **Role-Based Security**: Granular access control ensuring users see only relevant information
 - **Streamlined Operations**: Automated user workflows reducing administrative overhead
@@ -13,6 +15,7 @@ The User Management & Authentication system serves as the foundational security 
 - **Compliance & Audit**: Comprehensive activity logging for regulatory compliance and security monitoring
 
 ### Business Impact
+
 - **Operational Efficiency**: 75% reduction in manual user management tasks through automated workflows
 - **Security Enhancement**: Zero-trust architecture with role-based access controls and multi-factor authentication
 - **User Satisfaction**: Simplified registration and authentication processes with social media integration
@@ -22,6 +25,7 @@ The User Management & Authentication system serves as the foundational security 
 - **Family Management**: Consolidated billing and management for multiple children increases customer lifetime value
 
 ### Key Stakeholders
+
 - **Students**: End users receiving music education services
 - **Parents**: Guardians managing student accounts and educational progress
 - **Teachers**: Music instructors providing educational services
@@ -32,15 +36,18 @@ The User Management & Authentication system serves as the foundational security 
 ## 2. User Roles & Permissions
 
 ### 2.1 Student (Security Level 100)
+
 **Business Purpose**: End users receiving music education services and engaging with learning content.
 
 **Core Responsibilities**:
+
 - Attend scheduled lessons and complete assignments
 - Engage with educational content and practice materials
 - Communicate with teachers and school administrators
 - Manage personal learning preferences and progress tracking
 
 **Business Access Rights**:
+
 - **Personal Data**: Full access to own profile, preferences, and learning history
 - **Educational Content**: Access to assigned courses, lessons, and practice materials
 - **Scheduling**: View and manage own lesson schedules and availability
@@ -50,7 +57,8 @@ The User Management & Authentication system serves as the foundational security 
 
 **Business Justification**: Students require access to their educational materials and progress while maintaining privacy and age-appropriate restrictions. Students are core revenue generators who consume educational content and services, requiring access to their educational content while being restricted from administrative functions that could disrupt school operations.
 
-**Advanced Business Rules**:
+**Business Rules**:
+
 - Required fields ensure minimum data quality for effective operations
 - Contact information updates trigger verification workflows
 - Skill level assessments must be validated by qualified teachers
@@ -58,15 +66,18 @@ The User Management & Authentication system serves as the foundational security 
 - Account lockout protection prevents unauthorized access to paid content
 
 ### 2.2 Teacher (Security Level 200)
+
 **Business Purpose**: Music instructors providing educational services and managing student progress.
 
 **Core Responsibilities**:
+
 - Deliver music lessons and create educational content
 - Track student progress and provide feedback
 - Manage lesson schedules and availability
 - Communicate with students, parents, and school administrators
 
 **Business Access Rights**:
+
 - **Student Management**: Access to assigned students' profiles, progress, and educational history
 - **Content Creation**: Create and manage courses, lessons, and assignments
 - **Scheduling Management**: Set availability, manage lesson schedules, and handle cancellations
@@ -76,7 +87,8 @@ The User Management & Authentication system serves as the foundational security 
 
 **Business Justification**: Teachers are primary service delivery personnel who generate revenue through instruction. They need comprehensive access to student information to provide effective instruction while maintaining professional boundaries and being restricted from school-wide administrative functions.
 
-**Advanced Business Rules**:
+**Business Rules**:
+
 - Teacher onboarding requires credential verification and approval workflow
 - Access to student contact information limited to educational purposes only
 - Compensation and payroll information access restricted to own data
@@ -84,15 +96,18 @@ The User Management & Authentication system serves as the foundational security 
 - Performance monitoring through student feedback and retention metrics
 
 ### 2.3 SubAdmin (Security Level 250)
+
 **Business Purpose**: Limited administrative support staff with specific operational responsibilities.
 
 **Core Responsibilities**:
+
 - Assist with day-to-day administrative tasks
 - Support customer service and user management
 - Handle routine operational workflows
 - Provide first-level technical support
 
 **Business Access Rights**:
+
 - **Limited User Management**: Create and modify student and teacher accounts within assigned schools
 - **Scheduling Support**: Assist with lesson scheduling and calendar management
 - **Communication Management**: Handle customer service communications and notifications
@@ -102,15 +117,18 @@ The User Management & Authentication system serves as the foundational security 
 **Business Justification**: SubAdmins require operational access to support business functions while maintaining appropriate security boundaries.
 
 ### 2.4 School Administrator (Security Level 300)
+
 **Business Purpose**: Business owners and managers responsible for complete school operations and strategic decision-making.
 
 **Core Responsibilities**:
+
 - Manage all aspects of school operations and business strategy
 - Oversee teacher recruitment, training, and performance management
 - Monitor student enrollment, retention, and satisfaction
 - Handle financial management and business analytics
 
 **Business Access Rights**:
+
 - **Complete School Management**: Full access to all school-related data, users, and operations
 - **Teacher Management**: Recruit, onboard, evaluate, and manage teacher performance
 - **Student Oversight**: Monitor student progress, engagement, and satisfaction across all programs
@@ -121,34 +139,40 @@ The User Management & Authentication system serves as the foundational security 
 **Business Justification**: School administrators require comprehensive access to manage their business operations effectively and make informed strategic decisions.
 
 ### 2.5 Admin (Security Level 400)
+
 **Business Purpose**: System-wide administrators responsible for platform operations and multi-school management.
 
 **Core Responsibilities**:
+
 - Manage platform-wide operations and system health
 - Oversee multiple schools and resolve cross-school issues
-- Handle advanced technical support and system configuration
+- Handle technical support and system configuration
 - Ensure platform compliance and security standards
 
 **Business Access Rights**:
+
 - **Multi-School Management**: Access to all schools and their operational data
-- **Advanced User Management**: Create and manage all user types across the platform
+- **User Management**: Create and manage all user types across the platform
 - **System Configuration**: Configure platform-wide settings and integrations
-- **Advanced Analytics**: Access to platform-wide reporting and business intelligence
+- **Analytics**: Access to platform-wide reporting and business intelligence
 - **Security Management**: Monitor security events and manage access controls
 - **Integration Management**: Configure and manage third-party integrations
 
 **Business Justification**: Platform administrators require broad access to maintain system operations and support multiple schools effectively.
 
 ### 2.6 Super Admin (Security Level 500)
+
 **Business Purpose**: Ultimate system authority with complete platform control and emergency access capabilities.
 
 **Core Responsibilities**:
+
 - Maintain ultimate system security and integrity
 - Handle emergency situations and critical system issues
 - Manage platform architecture and strategic technical decisions
 - Oversee compliance with regulatory and security requirements
 
 **Business Access Rights**:
+
 - **Complete System Control**: Unrestricted access to all platform functions and data
 - **Emergency Override**: Ability to override any security restriction in emergency situations
 - **System Architecture**: Modify core system configurations and security policies
@@ -158,15 +182,18 @@ The User Management & Authentication system serves as the foundational security 
 **Business Justification**: Super administrators require ultimate access to ensure platform security, handle emergencies, and maintain system integrity.
 
 ### 2.7 PrecisePay (Security Level 600)
+
 **Business Purpose**: Automated payment processing system integration with specific financial data access requirements.
 
 **Core Responsibilities**:
+
 - Process payment transactions and updates
 - Maintain payment method and billing information
 - Generate payment-related notifications and reports
 - Ensure PCI compliance for financial data handling
 
 **Business Access Rights**:
+
 - **Payment Processing**: Access to payment methods, billing information, and transaction data
 - **Financial Reporting**: Generate payment-related reports and analytics
 - **Notification Management**: Send payment confirmations, failures, and reminders
@@ -174,13 +201,14 @@ The User Management & Authentication system serves as the foundational security 
 
 **Business Justification**: Payment processing requires specific access to financial data while being restricted from educational content and user management functions.
 
-## 3. Advanced Business Workflows & User Lifecycle Management
+## 3. Business Workflows & User Lifecycle Management
 
 ### 3.1 Comprehensive User Registration & Onboarding Orchestration
 
 #### **Multi-Stage Registration Workflow**
+
 ```
-Business Logic: Advanced Registration with SMS Verification and Validation
+Business Logic: Registration with SMS Verification and Validation
 
 Stage 1 - Initial Registration Data Collection:
 Save(Register obj):
@@ -207,6 +235,7 @@ Stage 3 - Account Finalization:
 ```
 
 #### **Family Registration Business Logic**
+
 ```
 Business Logic: SaveListMember(List\<Member\> Listobj, long userID) - Batch Family Processing
 
@@ -238,9 +267,10 @@ FOR EACH username IN proposedUsernames DO
 END FOR
 ```
 
-### 3.2 Advanced Authentication & Security Workflows
+### 3.2 Authentication & Security Workflows
 
 #### **Multi-Factor Authentication & Password Management**
+
 ```
 Business Logic: Comprehensive Security and Password Management
 
@@ -266,6 +296,7 @@ Password Policy Enforcement:
 ```
 
 #### **Role-Based Authentication & Permission Validation**
+
 ```
 Business Logic: Hierarchical Permission System with Role-Based Access Control
 
@@ -305,6 +336,7 @@ RETURN FALSE (Default deny access)
 ```
 
 #### **Social Authentication Integration**
+
 ```
 Business Logic: LoginForSchool(long schoolId, MemberOpenIdType openIdType, string token)
 
@@ -336,19 +368,23 @@ END IF
 ```
 
 #### Student Registration Workflow
+
 1. **Initial Registration**:
+
    - Student or parent provides basic information (name, email, phone)
    - System validates email uniqueness and format
    - Account created with temporary password
    - Email verification sent with activation link
 
 2. **Profile Completion**:
+
    - User completes detailed profile information
    - Selects musical interests, instruments, and skill level
    - Agrees to terms of service and privacy policy
    - System assigns appropriate permissions and access levels
 
 3. **School Association**:
+
    - Student selects or is assigned to a music school
    - School administrator approves enrollment
    - Student gains access to school-specific content and teachers
@@ -361,13 +397,16 @@ END IF
    - Initial assessment or placement evaluation
 
 #### Teacher Registration Workflow
+
 1. **Professional Registration**:
+
    - Teacher provides professional credentials and experience
    - System validates teaching qualifications and background
    - Account created with enhanced security requirements
    - Professional verification process initiated
 
 2. **School Partnership**:
+
    - Teacher applies to or is invited by music schools
    - School administrators review teacher qualifications
    - Partnership agreements and compensation terms established
@@ -382,7 +421,9 @@ END IF
 ### 3.2 Authentication Processes
 
 #### Standard Authentication
+
 1. **Login Process**:
+
    - User enters username/email and password
    - System validates credentials against encrypted database
    - Multi-factor authentication for elevated security levels
@@ -395,7 +436,9 @@ END IF
    - Account lockout after failed attempts with progressive delays
 
 #### Social Media Authentication
+
 1. **OAuth Integration**:
+
    - User selects social media provider (Google, Facebook, Apple)
    - Redirected to provider's authentication system
    - User grants permission for profile information access
@@ -407,11 +450,12 @@ END IF
    - Account unlinking available with security verification
    - Primary authentication method designation
 
-### 3.3 Advanced User Profile Management & Data Orchestration
+### 3.3 User Profile Management & Data Orchestration
 
 #### **Comprehensive Member Data Management**
+
 ```
-Business Logic: Save(Member obj, long userID) - Advanced Member Profile Processing
+Business Logic: Save(Member obj, long userID) - Member Profile Processing
 
 Member Profile Enhancement Framework:
 1. SMS Verification Integration: Automatic SMS verification setup based on system configuration
@@ -435,6 +479,7 @@ Profile Validation Rules:
 ```
 
 #### **Multi-Tenant User Management & School Relationships**
+
 ```
 Business Logic: GetMembers(MemberListParam model, ref int totalRecord, Member currentUser)
 
@@ -467,7 +512,9 @@ School-Teacher-Student Relationship Management:
 ### 3.4 Role Management & Transitions
 
 #### Role Assignment Process
+
 1. **Initial Role Assignment**:
+
    - New users assigned default role based on registration type
    - School administrators can modify roles within their scope
    - System administrators handle cross-school role assignments
@@ -484,13 +531,16 @@ School-Teacher-Student Relationship Management:
 ### 4.1 Access Control Hierarchies & Permission Matrix
 
 #### **Exact Permission Checking Algorithm (CheckPermission Method)**
+
 The system implements a hierarchical permission model with specific business rules:
 
 **Level 1: Super Admin & Admin Override**
+
 - **Admin (400) & Super Admin (500)**: Automatic `return true` - complete system access
 - **Business Rule**: Administrative roles bypass all permission checks for operational efficiency
 
 **Level 2: School Administrator Access**
+
 - **School (300)**: Can access any member where `viewMember.SchoolOwnerID == curUser.MemberID`
 - **Student Access Exception**: School admins can access students through parent relationships:
   - If student `IsParent = true`: Check if school exists in `GetAllSchoolByParentId(viewMember.MemberID)`
@@ -498,22 +548,26 @@ The system implements a hierarchical permission model with specific business rul
 - **Business Justification**: Schools need access to all students and parents within their educational ecosystem
 
 **Level 3: SubAdmin Delegated Access**
+
 - **SubAdmin (250)**: Can access members where `viewMember.SchoolOwnerID == curUser.SchoolOwnerID`
 - **Inheritance Rule**: SubAdmins inherit school-level permissions but cannot access the school owner directly
 - **Student Access**: Same parent/student relationship rules as School administrators
 - **Business Rule**: SubAdmins operate within their assigned school's scope with delegated authority
 
 **Level 4: Teacher Student Assignment Access**
+
 - **Teacher (200)**: Can only access students returned by `GetAllStudentForViewByTeacher(curUser.MemberID)`
 - **Assignment Validation**: System validates teacher-student assignments through active lesson plans
 - **Business Rule**: Teachers can only access students they are actively teaching
 
 **Level 5: Student Self & Parent Access**
+
 - **Student (100) with IsParent = true**: Can access children where parent verification exists in `GetParentsVerifiedByUserId(viewMember.MemberID)`
 - **Student (100) with IsParent = false**: Can only access own profile (`curUser.MemberID == viewMember.MemberID`)
 - **Business Rule**: Students have self-access only, parents have verified child access
 
 #### **School Ownership Validation Rules**
+
 - **Primary Ownership**: `SchoolOwnerID` field determines primary school association
 - **Multi-School Relationships**: Students and parents can be associated with multiple schools
 - **Cross-School Access**: Permissions validated through relationship tables, not direct ownership
@@ -522,24 +576,29 @@ The system implements a hierarchical permission model with specific business rul
 ### 4.2 User Registration & Validation Business Rules
 
 #### **SMS Verification Logic**
+
 ```
 Business Rule: if (!String.IsNullOrEmpty(obj.CellPhone) && smsVerify == 0)
     obj.VerifySMS = 1
 ```
+
 - **Automatic SMS Verification**: Users with phone numbers get automatic SMS verification when system setting `SMS_MOD_VERIFY = 0`
 - **Business Purpose**: Streamlines onboarding while maintaining contact verification
 - **Validation Trigger**: Applied during both registration (`RegisterBll.Save()`) and member updates (`MemberBll.Save()`)
 
 #### **Promotional Percentage Default**
+
 ```
 Business Rule: if (obj.PromoPercentage == null)
     obj.PromoPercentage = 0
 ```
+
 - **Default Promotion**: All users default to 0% promotional discount
 - **Business Logic**: Ensures consistent pricing calculations and prevents null reference errors
 - **Application**: Applied during user creation and updates
 
 #### **Communication Limits & Settings**
+
 - **Email Limits**: `mem.EmailLimit = info.EmailLimit > 0 ? info.EmailLimit : TZSetting.EmailLimit`
 - **SMS Limits**: `mem.SMSLimit = info.SMSLimit > 0 ? info.SMSLimit : TZSetting.SMSLimit`
 - **Payment Report Access**: `mem.AllowPaymentReport = info.AllowPaymentReport`
@@ -548,28 +607,33 @@ Business Rule: if (obj.PromoPercentage == null)
 ### 4.3 Parent-Student Relationship Management
 
 #### **Family Registration Business Logic**
+
 - **Bulk Family Creation**: `SaveListMember()` supports creating multiple family members in single transaction
 - **Relationship Establishment**: `SaveRelationStudentAndParent(parentId, studentId)` creates verified parent-child links
 - **School Association Validation**: `CheckParentOfSchool(schoolId, parentId)` ensures parents belong to appropriate schools
 
 #### **Parent Access Verification**
+
 - **Verified Parents Only**: `GetParentsVerifiedByUserId(userID)` returns only verified parent relationships
 - **Multi-Child Management**: `GetAllChildren(parentID)` returns all children for parent oversight
 - **Cross-School Parent Access**: Parents can access children across multiple schools through relationship validation
 
 #### **Age Calculation Business Rule**
+
 ```
 Business Logic: CountAgeMember(DateTime bday)
 DateTime today = DateTime.Today;
 int age = today.Year - bday.Year;
 if (bday > today.AddYears(-age)) age--;
 ```
+
 - **Precise Age Calculation**: Accounts for leap years and exact birth dates
 - **Business Application**: Used for age-based permissions, pricing, and compliance requirements
 
 ### 4.4 Role-Based Data Filtering
 
 #### **Member List Filtering by Current User Role**
+
 ```
 Business Logic: GetMembers(MemberListParam model, Member currentUser)
 if (currentUser.IsInRole(RoleGroup.Teacher))
@@ -584,6 +648,7 @@ else
 ```
 
 #### **Teacher-Student Assignment Validation**
+
 - **Assignment Check**: `checkStudentOfTeacher(teacherId, memberId)` validates active teaching relationships
 - **Parent-Teacher Validation**: `checkParentStudentAndTeacher(teacherId, parentId)` ensures teachers can communicate with parents of their students
 - **Business Rule**: Teachers can only access data for students they are actively teaching
@@ -591,16 +656,19 @@ else
 ### 4.5 Security & Compliance Rules
 
 #### **Login Validation & Session Management**
+
 - **Username/Email Flexibility**: `GetByUserNameOrEmailExits(userName)` supports login with either username or email
 - **Duplicate Prevention**: `CheckUserExists(userName)` prevents duplicate usernames
 - **Status Validation**: `GetAllStatusNoDeleted(userName)` excludes deleted accounts from authentication
 
 #### **Payment Gateway Access Control**
+
 - **ACH Approval Validation**: `CheckExistsAchApproved(memberId, roleId)` validates ACH payment permissions
 - **Gateway-Specific Rules**: Different validation logic for PrecisePay vs other gateways
 - **Business Rule**: Payment access tied to role and gateway approval status
 
 #### **Mass Communication Controls**
+
 - **Notification Management**: `UpdateMassTurnOffNotifications(memberId, massTurnOffNotifications)` allows users to control bulk communications
 - **Role-Based Messaging**: `SaveToRoleAll(fromMemberId, fromRole, toRole, body)` enables administrators to message entire user groups
 - **Business Purpose**: Balances communication needs with user preference management
@@ -608,9 +676,11 @@ else
 ## 5. User Experience & Scenarios
 
 ### 5.1 Student Enrollment Scenario
+
 **Scenario**: A 12-year-old student wants to enroll in piano lessons at a local music school.
 
 **Workflow**:
+
 1. Parent creates account on behalf of minor student
 2. Completes student profile with musical interests and experience level
 3. Selects local music school and submits enrollment application
@@ -620,15 +690,18 @@ else
 7. Student begins engaging with educational content and scheduling lessons
 
 **Success Criteria**:
+
 - Account created within 5 minutes
 - School approval within 24 hours
 - Student can access appropriate content immediately after approval
 - Parent maintains oversight and notification preferences
 
 ### 5.2 Multi-School Teacher Scenario
+
 **Scenario**: An experienced piano teacher wants to teach at multiple music schools to expand their student base.
 
 **Workflow**:
+
 1. Teacher creates professional account with credentials and experience
 2. Applies to multiple music schools through the platform
 3. Each school reviews qualifications and makes partnership decisions
@@ -638,15 +711,18 @@ else
 7. Receives consolidated compensation tracking across all schools
 
 **Success Criteria**:
+
 - Teacher can manage multiple school relationships efficiently
 - Students from different schools remain properly segregated
 - Compensation tracking accurately reflects multi-school teaching
 - Administrative overhead minimized through unified interface
 
 ### 5.3 School Administrator Growth Scenario
+
 **Scenario**: A music school administrator wants to expand operations by adding new teachers and increasing student enrollment.
 
 **Workflow**:
+
 1. Administrator reviews teacher applications and conducts interviews
 2. Approves qualified teachers and sets up compensation structures
 3. Creates marketing campaigns to attract new students
@@ -656,6 +732,7 @@ else
 7. Scales operations while maintaining quality and profitability
 
 **Success Criteria**:
+
 - Teacher onboarding completed within one week
 - Student enrollment tracking provides actionable insights
 - Business analytics support strategic decision-making

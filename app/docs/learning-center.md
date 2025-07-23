@@ -247,7 +247,7 @@ _For complete role definitions and hierarchy, see [User Management & Authenticat
 
 **Scenario 6: Student Progression**
 
-- **Context**: Piano student completes intermediate course series
+- **Context**: piano student completes intermediate course series
 - **Workflow**: Recommendation engine suggests courses and specialized techniques
 - **Business Value**: Continuous progression prevents student plateau and maintains engagement
 - **Success Criteria**: Student seamlessly transitions to content without engagement gaps
@@ -276,7 +276,7 @@ _For complete role definitions and hierarchy, see [User Management & Authenticat
 
 - **Minimum History Requirement**: Recommendations require minimum 3 completed courses or 10 hours practice time
 - **Instrument Matching**: Recommended courses must match student's primary instrument
-- **Skill Level Progression**: Recommendations follow logical skill level progression (beginner → intermediate → expert)
+- **Skill Level Progression**: Recommendations follow logical skill level progression (beginner → intermediate → advanced)
 - **School Content Priority**: School-specific content is prioritized over global content library
 - **Engagement Weighting**: Recent engagement patterns are weighted more heavily than historical data
 
@@ -293,7 +293,7 @@ _For complete role definitions and hierarchy, see [User Management & Authenticat
 
 - **Churn Prevention Value**: Retained students × Average annual tuition × Retention improvement percentage
 - **Engagement Revenue**: Increased lesson frequency × Average lesson cost × Engaged student count
-- **Upsell Opportunity**: Course enrollments × Premium course pricing differential
+- **Upsell Opportunity**: course enrollments × Premium course pricing differential
 
 ## Integration Points
 

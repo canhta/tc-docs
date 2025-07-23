@@ -1,6 +1,7 @@
 # Group Management - Product Requirements Document
 
 ## Document Information
+
 - **Document Type**: Product Requirements Document (PRD)
 - **Module**: Group Management
 - **Target Audience**: Product Owners, Business Analysts, Stakeholders
@@ -11,9 +12,11 @@
 ## Business Overview
 
 ### Value Proposition
+
 The Group Management module serves as the revenue multiplication engine for the TC platform, enabling efficient coordination of group lessons, ensemble management, and collaborative learning experiences. This module transforms traditional one-on-one instruction into scalable group offerings that increase teacher productivity, reduce per-student costs, and create engaging social learning environments.
 
 ### Business Impact
+
 - **Revenue Multiplication**: Group lessons increase teacher revenue by 200-300% per time slot
 - **Cost Efficiency**: Reduces per-student lesson costs by 40-60% while maintaining quality
 - **Teacher Productivity**: Enables teachers to serve 3-8 students simultaneously
@@ -22,6 +25,7 @@ The Group Management module serves as the revenue multiplication engine for the 
 - **Community Building**: Creates student connections that strengthen school loyalty
 
 ### Core Business Logic
+
 The Group Management system operates on the principle that well-coordinated group instruction can deliver superior educational and financial outcomes compared to individual lessons. The system enforces business rules that:
 
 1. **Revenue Optimization**: Group pricing models maximize revenue while remaining attractive to families
@@ -33,14 +37,16 @@ The Group Management system operates on the principle that well-coordinated grou
 
 ## User Roles & Permissions
 
-*For complete role definitions and hierarchy, see [User Management & Authentication PRD](./user-management-authentication-prd.md#user-roles--hierarchy)*
+_For complete role definitions and hierarchy, see [User Management & Authentication PRD](./user-management-authentication-prd.md#user-roles--hierarchy)_
 
 ### Primary Actors
 
 #### **Teachers (200)** - Group Instruction Leadership
+
 **Business Justification**: Teachers need comprehensive group management tools to coordinate multiple students effectively while maintaining educational quality and maximizing revenue potential.
 
 **Core Permissions**:
+
 - **Group Creation & Management**: Create, configure, and manage group lessons with size and skill level parameters
 - **Member Enrollment**: Add/remove students from groups with validation of compatibility and capacity
 - **Attendance Tracking**: Record group attendance with individual student status and billing implications
@@ -49,9 +55,11 @@ The Group Management system operates on the principle that well-coordinated grou
 - **Dashboard Integration**: Access group-specific analytics and student progress across all groups
 
 #### **School Administrators (300)** - Group Operations Oversight
+
 **Business Justification**: School administrators require oversight of group operations to optimize revenue, ensure quality standards, and coordinate facility resources effectively.
 
 **Core Permissions**:
+
 - **Group Analytics**: Access comprehensive group performance metrics and revenue analysis
 - **Teacher Group Assignment**: Assign teachers to groups and manage substitute teacher coordination
 - **Billing Oversight**: Monitor group billing, payment processing, and revenue optimization
@@ -60,9 +68,11 @@ The Group Management system operates on the principle that well-coordinated grou
 - **Resource Allocation**: Coordinate room assignments, equipment, and scheduling resources
 
 #### **Students (100)** - Group Learning Participation
+
 **Business Justification**: Students need clear visibility into their group participation, schedules, and collaborative learning opportunities to maximize engagement and progress.
 
 **Core Permissions**:
+
 - **Group Schedule Access**: View group lesson schedules, locations, and attendance requirements
 - **Member Directory**: Access contact information for group members (with privacy controls)
 - **Assignment Collaboration**: Participate in group assignments and collaborative learning activities
@@ -70,20 +80,23 @@ The Group Management system operates on the principle that well-coordinated grou
 - **Performance Participation**: Access information about group performances and recital opportunities
 
 #### **Parents (150)** - Group Investment Monitoring
+
 **Business Justification**: Parents require transparency into group dynamics, their child's participation, and the value delivered through group instruction to justify continued investment.
 
 **Core Permissions**:
+
 - **Child Group Monitoring**: View child's group participation, attendance, and progress
 - **Group Communication**: Receive notifications about group activities, performances, and schedule changes
 - **Billing Transparency**: Access group billing information and understand cost savings vs. individual lessons
 - **Performance Updates**: Receive updates about group performances and their child's participation
 - **Peer Progress Context**: Understand child's progress within group context (anonymized peer data)
 
-## 3. Advanced Business Workflows & Group Orchestration
+## 3. Business Workflows & Group Orchestration
 
 ### 3.1 Comprehensive Group Formation & Management Engine
 
-#### **Advanced Group Creation & Validation Framework**
+#### **Group Creation & Validation Framework**
+
 ```
 Business Logic: GroupBll.Save(Group obj, long userID) with CheckExist(Group obj, long OwnerID)
 
@@ -117,6 +130,7 @@ Business Integration Points:
 ```
 
 #### **Intelligent Student Assignment & Group Coordination**
+
 ```
 Business Logic: AssignStudentToPlanGroup(planId, memberBillingId, groupId, studentId, timeOffSet)
 
@@ -159,9 +173,10 @@ Business Rules:
 - Progress Tracking: Establishes individual progress tracking within group context
 ```
 
-### 3.2 Advanced Group Attendance & Individual Accountability
+### 3.2 Group Attendance & Individual Accountability
 
 #### **Comprehensive Group Attendance Management**
+
 ```
 Business Logic: StudentGroupAttendanceBll.UpdateByStudentPlanId(studentPlanId, listObj, userId)
 
@@ -209,9 +224,10 @@ Business Integration:
 - Reporting System: Attendance data feeds into comprehensive analytics and reports
 ```
 
-### 3.3 Advanced Plan Group Management & Payment Integration
+### 3.3 Plan Group Management & Payment Integration
 
 #### **Comprehensive Plan Group Coordination & Billing Integration**
+
 ```
 Business Logic: PlanGroupBll Integration with Payment and Scheduling Systems
 
@@ -260,7 +276,8 @@ Business Integration Points:
 - Payment Processing: Handles complex group payment scenarios and recurring billing
 ```
 
-#### **Advanced Group Queue Management & Capacity Optimization**
+#### **Group Queue Management & Capacity Optimization**
+
 ```
 Business Logic: PlanGroupQueue Management and Optimization
 
@@ -313,11 +330,12 @@ Business Benefits:
 ```
 
 #### **Multi-Teacher Group Coordination & Expertise Management**
+
 ```
-Business Logic: TeacherGroupBll Advanced Multi-Teacher Coordination
+Business Logic: TeacherGroupBll Multi-Teacher Coordination
 
 Multi-Teacher Framework:
-1. Collaborative Teaching: Supports multiple teachers for ensemble and advanced group lessons
+1. Collaborative Teaching: Supports multiple teachers for ensemble and group lessons
 2. Expertise Matching: Matches teacher skills with specific group lesson requirements
 3. Substitute Integration: Seamless substitute teacher assignment and coordination
 4. Communication Coordination: Manages teacher-to-teacher communication for group lessons
@@ -371,6 +389,7 @@ Business Value:
 ## Core Business Features
 
 ### 1. Group Creation & Configuration - Revenue Optimization Engine
+
 **Business Purpose**: Enable teachers to create profitable group offerings that maximize revenue while maintaining educational quality
 **Primary Users**: Teachers, School Administrators
 **Business Value**: Increases teacher revenue potential by 200-300% per time slot
@@ -378,6 +397,7 @@ Business Value:
 #### Business Workflows
 
 ##### **Group Creation & Setup Workflow**
+
 1. **Group Planning**: Teacher defines group parameters (instrument, skill level, age range, maximum capacity)
 2. **Validation Processing**: System validates group name uniqueness and teacher capacity constraints
 3. **Configuration Setup**: Teacher configures group-specific settings (billing model, attendance requirements, performance goals)
@@ -385,6 +405,7 @@ Business Value:
 5. **Activation Processing**: Group becomes available for student enrollment and scheduling
 
 **Business Rules**:
+
 - Group names must be unique within teacher's portfolio (CheckExist validation)
 - Maximum group size varies by instrument type (piano: 4 students, guitar: 6 students, voice: 8 students)
 - Minimum group size of 2 students required for financial viability
@@ -392,6 +413,7 @@ Business Value:
 - Group creation requires minimum 2-week advance notice for proper enrollment
 
 ##### **Group Capacity Management Workflow**
+
 1. **Enrollment Monitoring**: System tracks current enrollment against maximum capacity
 2. **Waitlist Management**: Maintains waitlist when groups reach capacity
 3. **Capacity Optimization**: Suggests optimal group sizes based on revenue and educational effectiveness
@@ -399,6 +421,7 @@ Business Value:
 5. **Resource Coordination**: Ensures adequate facility and equipment resources for group size
 
 **Business Rules**:
+
 - Groups operating below minimum capacity (2 students) trigger financial viability alerts
 - Groups at 80% capacity are prioritized for marketing and enrollment efforts
 - Capacity changes require 1-week notice to existing group members
@@ -407,18 +430,21 @@ Business Value:
 #### Key Business Scenarios
 
 **Scenario 1: New Guitar Group Formation**
+
 - **Context**: Guitar teacher wants to create intermediate group lesson for 4-6 students
 - **Workflow**: Teacher creates group, sets parameters, system validates capacity and schedules enrollment
 - **Business Value**: Teacher revenue increases from $40/hour (individual) to $120/hour (group of 4)
 - **Success Criteria**: Group reaches minimum 3 students within 2 weeks and maintains 90% attendance
 
 **Scenario 2: Piano Ensemble Expansion**
+
 - **Context**: Popular piano group reaches capacity, teacher wants to create second section
 - **Workflow**: System identifies waitlisted students, suggests optimal split, coordinates scheduling
 - **Business Value**: Doubles teacher revenue from single group while maintaining student satisfaction
 - **Success Criteria**: Both groups maintain minimum enrollment and high engagement scores
 
 ### 2. Member Enrollment & Management - Student Coordination Engine
+
 **Business Purpose**: Streamline student enrollment in groups while ensuring compatibility and maximizing group dynamics
 **Primary Users**: Teachers, School Administrators, Students
 **Business Value**: Reduces enrollment administrative time by 60% while improving group compatibility
@@ -426,6 +452,7 @@ Business Value:
 #### Business Workflows
 
 ##### **Student Enrollment Workflow**
+
 1. **Eligibility Assessment**: System evaluates student skill level, schedule availability, and group compatibility
 2. **Group Matching**: Algorithm suggests optimal group placements based on multiple compatibility factors
 3. **Enrollment Processing**: Student is added to group with automatic billing and scheduling integration
@@ -433,6 +460,7 @@ Business Value:
 5. **Integration Completion**: Student access is activated for group resources, assignments, and communications
 
 **Business Rules**:
+
 - Student skill level must be within one level of group average for effective instruction
 - Schedule conflicts are automatically detected and prevented during enrollment
 - Maximum 2 students can be enrolled per week to maintain group stability
@@ -440,6 +468,7 @@ Business Value:
 - Billing integration activates automatically upon successful enrollment
 
 ##### **Group Member Management Workflow**
+
 1. **Member Monitoring**: System tracks individual student progress and group participation
 2. **Compatibility Assessment**: Ongoing evaluation of student fit within group dynamics
 3. **Intervention Triggers**: Identifies students requiring additional support or group reassignment
@@ -447,6 +476,7 @@ Business Value:
 5. **Retention Optimization**: Proactive measures to maintain group cohesion and prevent dropouts
 
 **Business Rules**:
+
 - Students missing 3+ consecutive group sessions trigger intervention protocols
 - Skill level progression may require group reassignment for optimal learning
 - Group member changes require 1-week notice to maintain stability
@@ -455,18 +485,21 @@ Business Value:
 #### Key Business Scenarios
 
 **Scenario 3: Beginner Violin Group Enrollment**
+
 - **Context**: New violin student wants to join beginner group lesson
 - **Workflow**: System assesses skill level, checks group capacity, processes enrollment with billing integration
 - **Business Value**: Efficient enrollment process increases group participation and reduces administrative overhead
 - **Success Criteria**: Student successfully integrates into group and maintains consistent attendance
 
-**Scenario 4: Advanced Student Group Transition**
-- **Context**: Intermediate piano student outgrows current group and needs advanced placement
-- **Workflow**: System identifies skill progression, suggests advanced group options, facilitates smooth transition
+**Scenario 4: Student Group Transition**
+
+- **Context**: Intermediate piano student outgrows current group and needs placement
+- **Workflow**: System identifies skill progression, suggests group options, facilitates smooth transition
 - **Business Value**: Proper group placement maintains student engagement and prevents skill stagnation
 - **Success Criteria**: Student transitions successfully with continued progress and group integration
 
 ### 3. Group Scheduling & Coordination - Resource Optimization Engine
+
 **Business Purpose**: Optimize group scheduling to maximize facility utilization, teacher efficiency, and student convenience
 **Primary Users**: Teachers, School Administrators
 **Business Value**: Increases facility utilization by 40% while reducing scheduling conflicts by 80%
@@ -474,6 +507,7 @@ Business Value:
 #### Business Workflows
 
 ##### **Group Schedule Creation Workflow**
+
 1. **Availability Analysis**: System analyzes teacher availability, room capacity, and student schedules
 2. **Optimal Scheduling**: Algorithm suggests optimal time slots based on multiple optimization factors
 3. **Conflict Resolution**: Automatic detection and resolution of scheduling conflicts
@@ -481,6 +515,7 @@ Business Value:
 5. **Schedule Publication**: Distribution of finalized schedules to all group members and stakeholders
 
 **Business Rules**:
+
 - Group lessons require minimum 45-minute time slots for effective instruction
 - Maximum 2 groups can be scheduled back-to-back for teacher preparation time
 - Room capacity must accommodate group size plus 20% buffer for comfort
@@ -488,6 +523,7 @@ Business Value:
 - Holiday and break schedules are automatically integrated into group planning
 
 ##### **Schedule Coordination & Integration Workflow**
+
 1. **Calendar Synchronization**: Integration with Google Calendar and other scheduling systems
 2. **Attendance Coordination**: Real-time attendance tracking with billing implications
 3. **Makeup Scheduling**: Automated makeup lesson coordination for missed group sessions
@@ -495,6 +531,7 @@ Business Value:
 5. **Performance Planning**: Coordination of group performances and recital scheduling
 
 **Business Rules**:
+
 - Google Calendar integration provides real-time schedule updates to all participants
 - Makeup lessons require minimum 50% group attendance to maintain educational value
 - Resource conflicts are resolved with priority given to established groups
@@ -503,12 +540,14 @@ Business Value:
 #### Key Business Scenarios
 
 **Scenario 5: Multi-Group Schedule Optimization**
+
 - **Context**: School administrator needs to optimize facility usage across 12 active groups
 - **Workflow**: System analyzes all group requirements, suggests optimal scheduling matrix, resolves conflicts
 - **Business Value**: Maximizes facility revenue while ensuring optimal learning conditions
 - **Success Criteria**: 95% facility utilization with zero scheduling conflicts and high satisfaction scores
 
 ### 4. Group Attendance & Billing Integration - Financial Accountability Engine
+
 **Business Purpose**: Ensure accurate attendance tracking and fair billing for group instruction
 **Primary Users**: Teachers, School Administrators, Parents
 **Business Value**: Reduces billing disputes by 90% while ensuring fair cost allocation
@@ -516,6 +555,7 @@ Business Value:
 #### Business Workflows
 
 ##### **Group Attendance Tracking Workflow**
+
 1. **Session Initiation**: Teacher initiates group session with attendance recording interface
 2. **Individual Tracking**: System records attendance status for each group member individually
 3. **Billing Integration**: Attendance data automatically integrates with billing systems for accurate charges
@@ -523,6 +563,7 @@ Business Value:
 5. **Progress Integration**: Attendance data contributes to individual student progress tracking
 
 **Business Rules**:
+
 - Individual attendance tracking ensures fair billing for group instruction
 - Students are charged only for attended sessions in per-session billing models
 - Makeup lessons are available for excused absences with 24-hour notice
@@ -532,6 +573,7 @@ Business Value:
 #### Key Business Scenarios
 
 **Scenario 6: Group Billing Accuracy**
+
 - **Context**: Piano group with mixed attendance patterns requires accurate individual billing
 - **Workflow**: System tracks individual attendance, calculates pro-rated charges, integrates with billing
 - **Business Value**: Fair billing increases parent satisfaction and reduces payment disputes
@@ -542,6 +584,7 @@ Business Value:
 ### Core Business Rules
 
 #### **Group Formation Rules**
+
 - **Capacity Limits**: Maximum group sizes vary by instrument (Piano: 4, Guitar: 6, Voice: 8, Strings: 5)
 - **Skill Level Compatibility**: Students must be within one skill level of group average
 - **Age Range Guidelines**: Age spread within group should not exceed 3 years for optimal dynamics
@@ -549,6 +592,7 @@ Business Value:
 - **Teacher Capacity**: Individual teachers limited to 8 active groups for quality assurance
 
 #### **Enrollment Management Rules**
+
 - **Schedule Conflict Prevention**: System prevents enrollment if student has scheduling conflicts
 - **Skill Assessment Requirement**: New students require skill assessment before group placement
 - **Parent Approval**: Students under 16 require parent approval for group enrollment
@@ -556,6 +600,7 @@ Business Value:
 - **Notification Requirements**: All group members notified of enrollment changes within 24 hours
 
 #### **Attendance & Billing Rules**
+
 - **Individual Tracking**: Each student's attendance tracked separately for accurate billing
 - **Makeup Eligibility**: Excused absences with 24+ hour notice qualify for makeup lessons
 - **Minimum Attendance**: Groups require 50% attendance minimum for session to proceed
@@ -565,12 +610,14 @@ Business Value:
 ### Financial Calculations
 
 #### **Revenue Optimization Calculations**
+
 - **Group Revenue Multiplier**: (Number of students × Group rate per student) / Individual lesson rate
 - **Teacher Productivity Index**: (Total group revenue per hour) / (Individual lesson revenue per hour)
 - **Facility Utilization Rate**: (Group lesson hours / Total available hours) × 100
 - **Cost Per Student Reduction**: (Individual lesson cost - Group lesson cost per student) / Individual lesson cost × 100
 
 #### **Group Profitability Metrics**
+
 - **Break-Even Analysis**: Minimum students required = (Fixed costs + Teacher compensation) / (Revenue per student - Variable costs per student)
 - **Profit Margin Calculation**: (Group revenue - All costs) / Group revenue × 100
 - **Student Lifetime Value**: Average group participation duration × Average monthly group revenue per student
@@ -579,6 +626,7 @@ Business Value:
 ## Integration Points
 
 ### Internal System Dependencies
+
 - **[Scheduling & Calendar Management](./scheduling-calendar-management-prd.md)**: Group lesson scheduling and resource coordination
 - **[Payment & Billing Management](./payment-billing-management-prd.md)**: Group billing models and payment processing
 - **[User Management & Authentication](./user-management-authentication-prd.md)**: Role-based access and group permissions
@@ -586,6 +634,7 @@ Business Value:
 - **[Communication System](./communication-system-prd.md)**: Group notifications and member communications
 
 ### External System Integration
+
 - **Google Calendar**: Group schedule synchronization and member calendar integration
 - **Room Booking Systems**: Facility resource allocation and availability management
 - **Payment Gateways**: Group billing processing and payment collection
@@ -594,6 +643,7 @@ Business Value:
 ## Success Criteria & Metrics
 
 ### Business Success Metrics
+
 - **Revenue Multiplication**: 200-300% increase in teacher revenue per time slot through group instruction
 - **Group Formation Rate**: 80% of eligible students participate in at least one group offering
 - **Attendance Consistency**: 85% average attendance rate across all group lessons
@@ -601,6 +651,7 @@ Business Value:
 - **Teacher Adoption**: 90% of teachers actively manage at least 2 group offerings
 
 ### Operational Metrics
+
 - **Enrollment Efficiency**: 60% reduction in administrative time for group enrollment processes
 - **Scheduling Optimization**: 95% facility utilization during peak hours with zero conflicts
 - **Billing Accuracy**: 99% accuracy in group billing with automated attendance integration
@@ -608,6 +659,7 @@ Business Value:
 - **Capacity Utilization**: 85% average capacity utilization across all active groups
 
 ### User Experience Metrics
+
 - **Group Satisfaction**: 90% student satisfaction with group learning experience
 - **Parent Value Perception**: 85% of parents recognize cost savings and educational value
 - **Teacher Efficiency**: 40% reduction in per-student administrative overhead

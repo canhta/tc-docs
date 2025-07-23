@@ -1,11 +1,13 @@
-# Communication System PRD
+# Communication System
 
 ## 1. Business Overview
 
 ### Business Purpose
+
 The Communication System serves as the central nervous system for stakeholder engagement across the TC platform, facilitating seamless multi-channel communication between students, teachers, parents, and administrators. It ensures timely, relevant, and personalized communication that enhances the educational experience and strengthens community connections.
 
 ### Value Proposition
+
 - **Multi-Channel Integration**: Unified communication across email, SMS, in-app messaging, and push notifications
 - **Intelligent Automation**: Smart notification routing and automated communication workflows
 - **Personalized Messaging**: Targeted communication based on user roles, preferences, and engagement patterns
@@ -14,6 +16,7 @@ The Communication System serves as the central nervous system for stakeholder en
 - **Engagement Analytics**: Communication effectiveness tracking and optimization insights
 
 ### Business Impact
+
 - **Engagement Improvement**: 65% increase in student-teacher communication frequency
 - **Response Time Reduction**: 80% faster response times through automated routing and notifications
 - **Retention Enhancement**: 40% improvement in student retention through proactive communication
@@ -21,6 +24,7 @@ The Communication System serves as the central nervous system for stakeholder en
 - **Satisfaction Increase**: 90% stakeholder satisfaction with communication quality and timeliness
 
 ### Key Stakeholders
+
 - **Students**: Educational communication and progress updates
 - **Teachers**: Student communication and professional collaboration
 - **Parents**: Child progress monitoring and school communication
@@ -30,9 +34,11 @@ The Communication System serves as the central nervous system for stakeholder en
 ## 2. User Roles & Communication Permissions
 
 ### 2.1 Student Communication Rights
+
 **Business Purpose**: Enable students to communicate effectively with teachers and receive important educational updates.
 
 **Communication Capabilities**:
+
 - **Teacher Messaging**: Direct messaging with assigned teachers for lesson-related questions
 - **Assignment Communication**: Receive assignment notifications and submit questions about coursework
 - **Progress Updates**: Receive automated progress reports and achievement notifications
@@ -41,15 +47,18 @@ The Communication System serves as the central nervous system for stakeholder en
 - **Support Requests**: Contact customer support for technical and account assistance
 
 **Communication Restrictions**:
+
 - Limited to educational and platform-related communication
 - Moderated communication for minor students with parental oversight
 - Restricted access to other students' personal information
 - Compliance with platform community guidelines and safety policies
 
 ### 2.2 Teacher Communication Authority
+
 **Business Purpose**: Provide teachers with comprehensive communication tools for effective student instruction and parent engagement.
 
 **Communication Capabilities**:
+
 - **Student Messaging**: Direct communication with assigned students for educational support
 - **Parent Communication**: Regular updates to parents about student progress and performance
 - **Group Messaging**: Communicate with multiple students or parents simultaneously
@@ -58,15 +67,18 @@ The Communication System serves as the central nervous system for stakeholder en
 - **Broadcast Messaging**: Send announcements to all assigned students and parents
 
 **Professional Responsibilities**:
+
 - Maintain professional communication standards and educational focus
 - Provide timely responses to student and parent inquiries
 - Document important communications for progress tracking
 - Comply with privacy regulations and school communication policies
 
 ### 2.3 Parent Communication Access
+
 **Business Purpose**: Keep parents informed and engaged in their child's musical education journey.
 
 **Communication Capabilities**:
+
 - **Teacher Communication**: Direct messaging with child's teachers for progress discussions
 - **Progress Monitoring**: Receive regular updates about child's learning progress and achievements
 - **Schedule Management**: Notifications about lessons, events, and schedule changes
@@ -75,9 +87,11 @@ The Communication System serves as the central nervous system for stakeholder en
 - **Emergency Notifications**: Immediate alerts for urgent matters affecting their child
 
 ### 2.4 Administrative Communication Control
+
 **Business Purpose**: Provide comprehensive communication management for operational efficiency and stakeholder engagement.
 
 **Communication Management**:
+
 - **Broadcast Messaging**: Send announcements to all users or specific user groups
 - **Automated Campaigns**: Set up automated communication sequences for onboarding and engagement
 - **Communication Analytics**: Monitor communication effectiveness and engagement metrics
@@ -85,11 +99,12 @@ The Communication System serves as the central nervous system for stakeholder en
 - **Compliance Monitoring**: Ensure all communications comply with regulations and policies
 - **Emergency Communications**: Manage crisis communication and urgent notifications
 
-## 3. Advanced Business Workflows & Communication Orchestration
+## 3. Business Workflows & Communication Orchestration
 
 ### 3.1 Comprehensive Multi-Channel Communication Engine
 
-#### **Advanced Email Delivery & Processing Orchestration**
+#### **Email Delivery & Processing Orchestration**
+
 ```
 Business Logic: EmailSendDo(TriggerNotifyEnum code, Member fromMember, Member toMember, string toEmail, string title, string body, string file, long groupSendId, short typeOfPayment)
 
@@ -139,6 +154,7 @@ Business Integration Points:
 ```
 
 #### **SMS Communication & Multi-Channel Coordination**
+
 ```
 Business Logic: SMSSend(TriggerNotifyEnum code, Member fromMember, Member toMember, string toPhoneNumber, string content)
 
@@ -175,6 +191,7 @@ Multi-Channel Coordination:
 ```
 
 #### **Real-Time Chat & In-App Messaging System**
+
 ```
 Business Logic: MessageChatBll and MessageBll Integration
 
@@ -215,9 +232,10 @@ SaveUploadError(id, userId):
 - Maintains file upload analytics for system optimization
 ```
 
-### 3.2 Advanced Template Management & Customization Engine
+### 3.2 Template Management & Customization Engine
 
 #### **Dynamic Template Processing & Customization**
+
 ```
 Business Logic: GetTriggerTemplateBy(memberId, triggerCode, smsFormatDefault, schoolId)
 
@@ -260,6 +278,7 @@ Business Customization Rules:
 ```
 
 #### **Firebase Push Notification & Mobile Integration**
+
 ```
 Business Logic: SaveFireBaseToken(MemberFireBaseToken obj, string deviceId) and Push Notification Management
 
@@ -306,7 +325,9 @@ Business Integration Points:
 ### 3.3 Automated Communication Workflows
 
 #### Student Onboarding Communication Sequence
+
 1. **Welcome Series**:
+
    - Immediate welcome email with platform introduction and next steps
    - Day 2: Platform navigation guide and feature overview
    - Day 5: First lesson preparation tips and expectations
@@ -321,7 +342,9 @@ Business Integration Points:
    - Feedback requests and satisfaction surveys
 
 #### Teacher Professional Communication
+
 1. **Professional Development**:
+
    - Monthly teaching tips and best practice sharing
    - New feature announcements and training opportunities
    - Student success stories and teaching inspiration
@@ -338,7 +361,9 @@ Business Integration Points:
 ### 3.2 Real-Time Communication Management
 
 #### Instant Messaging System
+
 1. **Message Routing**:
+
    - Intelligent routing based on user availability and preferences
    - Priority escalation for urgent educational matters
    - Automated responses for common questions and requests
@@ -353,7 +378,9 @@ Business Integration Points:
    - Integration with lesson scheduling and progress tracking
 
 #### Emergency Communication Protocols
+
 1. **Crisis Communication**:
+
    - Immediate notification system for urgent matters
    - Multi-channel alert distribution (email, SMS, push, in-app)
    - Escalation procedures for critical situations
@@ -370,7 +397,9 @@ Business Integration Points:
 ### 3.3 Personalized Communication Delivery
 
 #### Preference-Based Communication
+
 1. **Communication Preferences**:
+
    - User-defined communication channel preferences
    - Frequency settings for different types of notifications
    - Time zone and scheduling preferences for communications
@@ -384,11 +413,12 @@ Business Integration Points:
    - A/B testing for communication effectiveness optimization
    - Feedback integration for continuous improvement
 
-## 4. Advanced Business Rules & Communication Logic
+## 4. Business Rules & Communication Logic
 
 ### 4.1 Comprehensive Message Routing & Delivery Algorithms
 
-#### **Advanced Permission & Authorization Framework**
+#### **Permission & Authorization Framework**
+
 ```
 Business Logic: CanSend(SendType sendType, TriggerNotifyEnum code, Member fromMember, Member toMember)
 
@@ -439,6 +469,7 @@ RETURN TRUE (Communication authorized)
 ```
 
 #### **Intelligent Message Delivery Optimization**
+
 ```
 Business Logic: Multi-Channel Delivery Strategy with Fallback Mechanisms
 
@@ -484,7 +515,8 @@ END IF
 RETURN optimalTime
 ```
 
-#### **Advanced Template Personalization & Content Management**
+#### **Template Personalization & Content Management**
+
 ```
 Business Logic: Dynamic Content Generation and Personalization
 
@@ -534,6 +566,7 @@ Business Value:
 ```
 
 #### **Email Delivery Workflow**
+
 ```
 Business Logic: EmailSend(TriggerNotifyEnum code, Member fromMember, Member toMember, string toEmail, string title, string body, string file)
 - Environment Validation: Different behavior for Live vs Development environments
@@ -543,6 +576,7 @@ Business Logic: EmailSend(TriggerNotifyEnum code, Member fromMember, Member toMe
 ```
 
 #### **Email Processing Rules**
+
 ```
 Business Logic: EmailSendDo() Implementation
 Validation Checks:
@@ -555,6 +589,7 @@ Validation Checks:
 ### 4.2 Real-Time Communication Management
 
 #### **Chat Message Processing**
+
 ```
 Business Logic: MessageChatBll.Save(MessageChat obj, long userID)
 - Message Validation: Validates message content and sender permissions
@@ -564,6 +599,7 @@ Business Logic: MessageChatBll.Save(MessageChat obj, long userID)
 ```
 
 #### **Role-Based Mass Communication**
+
 ```
 Business Logic: SaveToRoleAll(long fromMemberId, int fromRole, int toRole, string body)
 - Permission Validation: Ensures sender has authority to message entire role groups
@@ -573,6 +609,7 @@ Business Logic: SaveToRoleAll(long fromMemberId, int fromRole, int toRole, strin
 ```
 
 #### **Message Read Status Management**
+
 ```
 Business Logic: UpdateReadAllByMember() and GetCountUnreadByMemberID()
 - Read Receipt Tracking: Maintains read/unread status for all messages
@@ -583,6 +620,7 @@ Business Logic: UpdateReadAllByMember() and GetCountUnreadByMemberID()
 ### 4.3 Automated Notification System
 
 #### **Firebase Push Notification Logic**
+
 ```
 Business Logic: NotificationFireBaseSendAsyn(TriggerNotifyEnum code, Member member, ...)
 - Asynchronous Processing: Uses Task-based async processing for performance
@@ -592,6 +630,7 @@ Business Logic: NotificationFireBaseSendAsyn(TriggerNotifyEnum code, Member memb
 ```
 
 #### **Parent Notification Routing**
+
 ```
 Business Logic: GetListParentUser(TriggerNotifyEnum code, Member member, short toTypeId, long toMember)
 - Parent Identification: Automatically identifies parents for student-related notifications
@@ -601,6 +640,7 @@ Business Logic: GetListParentUser(TriggerNotifyEnum code, Member member, short t
 ```
 
 #### **Notification Trigger Processing**
+
 ```
 Business Logic: NotificationFireBaseSendDo(TriggerNotifyEnum code, Member fromMember, ...)
 - Trigger Classification: Different processing logic for different notification types
@@ -612,6 +652,7 @@ Business Logic: NotificationFireBaseSendDo(TriggerNotifyEnum code, Member fromMe
 ### 4.4 Custom Communication Templates
 
 #### **Template Management System**
+
 ```
 Business Logic: CustomCommunicationBll.GetHasCustomCommunication(memberId, templateKey)
 - School-Specific Templates: Schools can customize communication templates
@@ -621,6 +662,7 @@ Business Logic: CustomCommunicationBll.GetHasCustomCommunication(memberId, templ
 ```
 
 #### **Template Customization Workflow**
+
 ```
 Business Logic: Custom Communication Processing
 1. Template Lookup: GetHasCustomCommunication() checks for custom templates
@@ -631,6 +673,7 @@ Business Logic: Custom Communication Processing
 ```
 
 #### **Template Reset & Management**
+
 ```
 Business Logic: ResetToDefault(CustomCommunication obj)
 - Template Restoration: Resets custom templates to system defaults
@@ -642,6 +685,7 @@ Business Logic: ResetToDefault(CustomCommunication obj)
 ### 4.5 Notification Preferences & Settings
 
 #### **User Notification Settings**
+
 ```
 Business Logic: MemberNotificationSettingBll.GetByMemberId(memberId)
 - Granular Control: Users control notification preferences by type and channel
@@ -651,6 +695,7 @@ Business Logic: MemberNotificationSettingBll.GetByMemberId(memberId)
 ```
 
 #### **Notification Setting Inheritance**
+
 ```
 Business Logic: Notification Setting Management
 - Default Settings: New users receive default notification preferences
@@ -660,6 +705,7 @@ Business Logic: Notification Setting Management
 ```
 
 #### **Mass Notification Controls**
+
 ```
 Business Logic: UpdateMassTurnOffNotifications(memberId, massTurnOffNotifications)
 - Bulk Notification Control: Users can disable all non-essential notifications
@@ -671,6 +717,7 @@ Business Logic: UpdateMassTurnOffNotifications(memberId, massTurnOffNotification
 ### 4.6 Communication Logging & Audit
 
 #### **Communication Audit Trail**
+
 ```
 Business Logic: CommunicationLogBll.GetAll() and GetAllForParent()
 - Comprehensive Logging: All communications logged for compliance and audit
@@ -680,6 +727,7 @@ Business Logic: CommunicationLogBll.GetAll() and GetAllForParent()
 ```
 
 #### **Activity Logging Integration**
+
 ```
 Business Logic: ActivityLogBll.Save() and GetByMemberRender()
 - User Activity Tracking: All communication activities logged with context
@@ -691,18 +739,21 @@ Business Logic: ActivityLogBll.Save() and GetByMemberRender()
 ### 4.7 Communication Compliance & Security
 
 #### **Content Filtering & Moderation**
+
 - **Automated Filtering**: Real-time content filtering for inappropriate language and content
 - **Role-Based Restrictions**: Different content rules for teacher-student vs peer communications
 - **Professional Standards**: Automated detection of unprofessional communication patterns
 - **Escalation Procedures**: Flagged content automatically escalated to administrators
 
 #### **Privacy & Data Protection**
+
 - **COPPA Compliance**: Special handling for communications involving minors
 - **GDPR Compliance**: Right to deletion and data portability for communications
 - **Educational Privacy**: FERPA compliance for educational communications
 - **Data Encryption**: All communications encrypted in transit and at rest
 
 #### **Emergency Communication Protocols**
+
 - **Priority Override**: Emergency communications bypass normal delivery restrictions
 - **Multi-Channel Delivery**: Critical messages delivered via all available channels
 - **Delivery Confirmation**: Emergency messages require delivery confirmation
@@ -711,9 +762,11 @@ Business Logic: ActivityLogBll.Save() and GetByMemberRender()
 ## 5. User Experience & Scenarios
 
 ### 5.1 Parent-Teacher Communication Scenario
+
 **Scenario**: A parent wants to discuss their child's progress and address concerns about practice habits.
 
 **Workflow**:
+
 1. Parent receives automated monthly progress report highlighting areas of improvement
 2. Parent initiates conversation with teacher through secure messaging system
 3. Teacher responds within 24 hours with detailed practice recommendations
@@ -723,15 +776,18 @@ Business Logic: ActivityLogBll.Save() and GetByMemberRender()
 7. Month-end review shows significant improvement in practice consistency
 
 **Success Criteria**:
+
 - Teacher response within 24 hours for non-urgent communications
 - Clear action plan established with measurable practice goals
 - 50% improvement in student practice consistency within one month
 - High parent satisfaction with communication quality and teacher responsiveness
 
 ### 5.2 Student Engagement Communication Scenario
+
 **Scenario**: A student is becoming less engaged with lessons and practice, requiring intervention.
 
 **Workflow**:
+
 1. System detects declining engagement through practice tracking and lesson attendance
 2. Automated re-engagement sequence initiated with personalized encouragement
 3. Teacher receives alert and initiates personal check-in conversation
@@ -741,15 +797,18 @@ Business Logic: ActivityLogBll.Save() and GetByMemberRender()
 7. Student engagement returns to normal levels with sustained motivation
 
 **Success Criteria**:
+
 - Early detection of engagement decline within one week
 - Intervention initiated within 48 hours of detection
 - 80% success rate in re-engaging students through personalized communication
 - Sustained engagement improvement maintained for at least three months
 
 ### 5.3 School-Wide Communication Management Scenario
+
 **Scenario**: A music school needs to communicate a policy change affecting all students and parents.
 
 **Workflow**:
+
 1. Administrator creates comprehensive communication plan for policy rollout
 2. Multi-channel announcement sent to all affected stakeholders
 3. FAQ document created and shared addressing common questions
@@ -759,6 +818,7 @@ Business Logic: ActivityLogBll.Save() and GetByMemberRender()
 7. Final confirmation sent when policy fully implemented and adopted
 
 **Success Criteria**:
+
 - 95% message delivery rate across all communication channels
 - 90% stakeholder acknowledgment and understanding of policy changes
 - Less than 5% support requests requiring individual assistance
@@ -766,12 +826,14 @@ Business Logic: ActivityLogBll.Save() and GetByMemberRender()
 
 ---
 
-## 8. Advanced Business Use Cases
+## 8. Business Use Cases
 
 ### 8.1 Student Enrollment Communication Workflow
+
 **Business Process**: Comprehensive onboarding communication sequence
 
 **Workflow Steps**:
+
 1. **Welcome Series**: Automated welcome email series for new student onboarding
 2. **Lesson Confirmations**: Immediate confirmation emails for lesson bookings and changes
 3. **Progress Updates**: Regular progress emails to parents with student achievements
@@ -782,9 +844,11 @@ Business Logic: ActivityLogBll.Save() and GetByMemberRender()
 **Business Value**: Systematic communication improves student experience and increases retention by 40%
 
 ### 8.2 Emergency Communication Protocol
+
 **Business Process**: Crisis communication management with stakeholder safety priority
 
 **Protocol Steps**:
+
 1. **Incident Notification**: Immediate alerts to affected students and parents about emergencies
 2. **Alternative Arrangements**: Quick communication of alternative lesson arrangements
 3. **Status Updates**: Regular updates on situation resolution and normal operations resumption
@@ -794,15 +858,18 @@ Business Logic: ActivityLogBll.Save() and GetByMemberRender()
 **Business Value**: Effective emergency communication protects relationships and demonstrates professional crisis management
 
 ### 8.3 Email Deliverability Optimization
+
 **Business Process**: Maintaining high email delivery rates and sender reputation
 
 **Optimization Features**:
+
 - **Email Verification**: Address validation reduces bounce rates and improves communication reliability
 - **Domain Validation**: Prevents typos and ensures deliverable email addresses
 - **Bounce Handling**: Proper bounce handling maintains sender reputation and identifies delivery issues
 - **Deliverability Monitoring**: Continuous monitoring and optimization of delivery metrics
 
 **Business Rules**:
+
 - Verification required for all new email addresses before critical communications
 - Invalid domains must be flagged and corrected before account activation
 - Repeated bounces trigger address verification and alternative contact methods

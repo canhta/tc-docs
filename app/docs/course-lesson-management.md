@@ -3,9 +3,11 @@
 ## 1. Business Overview
 
 ### Business Purpose
+
 The Course & Lesson Management system serves as the educational content creation and delivery engine for the TC platform. It enables teachers to create, organize, and deliver high-quality music education content while providing students with engaging, structured learning experiences that track progress and achievement.
 
 ### Value Proposition
+
 - **Content Creation Excellence**: Comprehensive tools for creating professional music education content
 - **Structured Learning Paths**: Organized curriculum progression from beginner to expert levels
 - **Progress Tracking**: Detailed analytics on student engagement and learning outcomes
@@ -14,6 +16,7 @@ The Course & Lesson Management system serves as the educational content creation
 - **Multi-Media Integration**: Support for video, audio, sheet music, and interactive materials
 
 ### Business Impact
+
 - **Educational Quality**: 85% improvement in student learning outcomes through structured content
 - **Teacher Productivity**: 60% reduction in lesson preparation time through reusable content
 - **Student Engagement**: 70% increase in practice time through interactive learning materials
@@ -24,6 +27,7 @@ The Course & Lesson Management system serves as the educational content creation
 - **Student Retention**: Progressive course structures and tracking improve completion rates by 45%
 
 ### Key Stakeholders
+
 - **Teachers**: Content creators and curriculum designers
 - **Students**: Content consumers and learning participants
 - **School Administrators**: Quality oversight and curriculum management
@@ -33,9 +37,11 @@ The Course & Lesson Management system serves as the educational content creation
 ## 2. User Roles & Content Permissions
 
 ### 2.1 Teacher Content Creation Rights
+
 **Business Purpose**: Enable teachers to create, manage, and deliver high-quality educational content.
 
 **Content Creation Capabilities**:
+
 - **Course Development**: Create comprehensive course structures with learning objectives
 - **Lesson Planning**: Design individual lessons with multimedia content and assessments
 - **Resource Management**: Upload and organize teaching materials, sheet music, and recordings
@@ -44,12 +50,14 @@ The Course & Lesson Management system serves as the educational content creation
 - **Collaboration Tools**: Share content with other teachers for peer review and improvement
 
 **Quality Control Responsibilities**:
+
 - Ensure content meets educational standards and learning objectives
 - Maintain accuracy of musical theory and technique instruction
 - Update content based on student feedback and learning outcomes
 - Comply with copyright and intellectual property requirements
 
 **Business Rules**:
+
 - Course content requires administrative approval before student access
 - Course pricing reflects complexity, duration, and teacher qualifications
 - Course titles and descriptions must align with school branding and educational standards
@@ -58,9 +66,11 @@ The Course & Lesson Management system serves as the educational content creation
 - Progress tracking enables data-driven instruction and retention strategies
 
 ### 2.2 Student Learning Access
+
 **Business Purpose**: Provide students with structured, engaging access to educational content.
 
 **Learning Capabilities**:
+
 - **Course Enrollment**: Browse and enroll in available courses based on skill level
 - **Lesson Progression**: Follow structured learning paths with prerequisite management
 - **Interactive Content**: Engage with multimedia lessons, practice exercises, and assessments
@@ -69,15 +79,18 @@ The Course & Lesson Management system serves as the educational content creation
 - **Peer Interaction**: Participate in group discussions and collaborative learning activities
 
 **Personalization Features**:
+
 - Customized learning paths based on musical interests and goals
 - Adaptive content difficulty based on performance and progress
 - Personalized practice recommendations and skill development focus
 - Individual pacing with flexible scheduling and deadline management
 
 ### 2.3 Administrative Oversight
+
 **Business Purpose**: Ensure educational quality and business alignment of all content.
 
 **Quality Assurance Responsibilities**:
+
 - **Content Review**: Approve new courses and lessons before publication
 - **Standards Compliance**: Ensure content meets educational and business standards
 - **Performance Monitoring**: Track content effectiveness and student outcomes
@@ -89,6 +102,7 @@ The Course & Lesson Management system serves as the educational content creation
 ### 3.1 Comprehensive Lesson Management & Content Delivery Engine
 
 #### **Lesson Scheduling & Content Integration**
+
 ```
 Business Logic: Save(StudentSchedule obj, long userID) - Lesson Creation with Content Linkage
 
@@ -115,6 +129,7 @@ Integration with Educational Content:
 ```
 
 #### **Lesson Property Management & Educational Customization**
+
 ```
 Business Logic: LessonPropertySave(StudentSchedulePropertyDto dto, Member curUser)
 
@@ -147,6 +162,7 @@ Educational Customization Options:
 ```
 
 #### **Lesson Note Management & Progress Documentation**
+
 ```
 Business Logic: UpdateScheduleNote(studentPlanId, scheduleRefId, noteValue, userID, isFollowing)
 
@@ -181,6 +197,7 @@ Business Value:
 ```
 
 #### **Intelligent Lesson Notification & Reminder System**
+
 ```
 Business Logic: LessonReminderCheck() and LessonReminderUpdate() - Automated Communication
 
@@ -224,9 +241,10 @@ Business Benefits:
 - Operational Reliability: Systematic tracking ensures no missed communications
 ```
 
-### 3.3 Advanced Student Progress Tracking & Reporting
+### 3.3 Student Progress Tracking & Reporting
 
 #### **Comprehensive Course Progress Analytics**
+
 ```
 Business Logic: StudentCourseReport and StudentDailyReport Integration
 
@@ -257,7 +275,9 @@ GetByStudentAndDate(studentId, fromDate, toDate, groupId):
 ### 3.4 Course Creation & Publication Workflow
 
 #### Phase 1: Course Planning
+
 1. **Curriculum Design**:
+
    - Teacher identifies learning objectives and target skill levels
    - Creates course outline with lesson progression and milestones
    - Defines prerequisite knowledge and recommended preparation
@@ -270,7 +290,9 @@ GetByStudentAndDate(studentId, fromDate, toDate, groupId):
    - Creates assessment and feedback mechanisms
 
 #### Phase 2: Content Development
+
 1. **Lesson Creation**:
+
    - Develops individual lesson content with clear learning objectives
    - Creates multimedia materials (video demonstrations, audio examples)
    - Designs practice exercises and skill assessments
@@ -283,13 +305,16 @@ GetByStudentAndDate(studentId, fromDate, toDate, groupId):
    - Develops supplementary reading and reference materials
 
 #### Phase 3: Quality Assurance
+
 1. **Internal Review**:
+
    - Teacher conducts self-review for content accuracy and completeness
    - Tests all interactive elements and multimedia functionality
    - Validates learning progression and difficulty scaling
    - Ensures compliance with educational standards
 
 2. **Peer Review** (Optional):
+
    - Other teachers review content for quality and effectiveness
    - Collaborative feedback and improvement suggestions
    - Best practice sharing and knowledge transfer
@@ -302,7 +327,9 @@ GetByStudentAndDate(studentId, fromDate, toDate, groupId):
    - Marketing and promotional content creation
 
 #### Phase 4: Publication & Launch
+
 1. **Course Publishing**:
+
    - Content published to platform with appropriate access controls
    - Course catalog updated with new offering and descriptions
    - Enrollment opens for qualified students
@@ -317,7 +344,9 @@ GetByStudentAndDate(studentId, fromDate, toDate, groupId):
 ### 3.2 Student Learning Journey Workflow
 
 #### Phase 1: Course Discovery & Enrollment
+
 1. **Course Exploration**:
+
    - Student browses course catalog with filtering by instrument, level, and style
    - Reviews course descriptions, learning objectives, and teacher profiles
    - Accesses preview content and sample lessons
@@ -330,7 +359,9 @@ GetByStudentAndDate(studentId, fromDate, toDate, groupId):
    - Confirmation and access granted to course materials
 
 #### Phase 2: Active Learning Engagement
+
 1. **Lesson Progression**:
+
    - Student follows structured lesson sequence with prerequisite enforcement
    - Engages with multimedia content and interactive exercises
    - Completes practice assignments and skill assessments
@@ -343,7 +374,9 @@ GetByStudentAndDate(studentId, fromDate, toDate, groupId):
    - Participates in peer practice groups and collaborative exercises
 
 #### Phase 3: Assessment & Feedback
+
 1. **Progress Evaluation**:
+
    - Completes lesson assessments and skill demonstrations
    - Receives automated feedback on performance and areas for improvement
    - Participates in teacher-led evaluations and one-on-one feedback sessions
@@ -352,14 +385,15 @@ GetByStudentAndDate(studentId, fromDate, toDate, groupId):
 2. **Continuous Improvement**:
    - Adjusts learning pace based on performance and comprehension
    - Accesses additional resources for challenging concepts
-   - Participates in remedial exercises or advanced challenges as needed
+   - Participates in remedial exercises or challenges as needed
    - Provides feedback on course content and learning experience
 
-## 4. Advanced Business Rules & Educational Logic
+## 4. Business Rules & Educational Logic
 
 ### 4.1 Lesson Attendance Integration & Progress Correlation
 
 #### **Attendance-Based Progress Tracking**
+
 ```
 Business Logic: UpdateAttendanceReportByStatusID(studentPlanID, statusId, curUser)
 
@@ -391,7 +425,8 @@ Business Justification:
 - Progress Accuracy: Provides realistic progress tracking based on actual participation
 ```
 
-#### **Advanced Lesson Reservation & Resource Management**
+#### **Lesson Reservation & Resource Management**
+
 ```
 Business Logic: ReserveLesson(studentPlanId, reserveUID, groupId, refId, studentId)
 
@@ -428,6 +463,7 @@ Resource Management Integration:
 ### 4.2 Course Creation & Approval Workflow
 
 #### **Content Approval Business Logic**
+
 ```
 Business Rule: Course Approval Process
 - StatusID Management: Courses progress through Pending → Approved → Published states
@@ -437,6 +473,7 @@ Business Rule: Course Approval Process
 ```
 
 #### **Course Existence Validation**
+
 ```
 Business Logic: CheckExist(Course objCourse) and CheckExist(string title)
 - Duplicate Prevention: System prevents duplicate course titles within same scope
@@ -445,6 +482,7 @@ Business Logic: CheckExist(Course objCourse) and CheckExist(string title)
 ```
 
 #### **Course History & Versioning**
+
 - **Version Control**: `CheckHasCorseHistory(courseId)` determines if course has historical versions
 - **History Creation**: `SaveHistory()` creates new version while preserving original
 - **Rollback Capability**: `GetCourseNoHistory(id)` retrieves original version for rollback
@@ -453,6 +491,7 @@ Business Logic: CheckExist(Course objCourse) and CheckExist(string title)
 ### 4.2 Content Sharing & Access Control
 
 #### **Granular Sharing Permissions (ShareWith Enum)**
+
 ```
 Business Logic: Course Access Control Matrix
 ShareWith.World: Public access - all users can view
@@ -462,6 +501,7 @@ ShareWith.YouOnly: Private - creator access only
 ```
 
 #### **Access Validation Algorithm**
+
 ```
 Business Rule: CheckCourseAccess(course, currentUser)
 1. World Access: if (course.ShareID == ShareWith.World) return true
@@ -473,6 +513,7 @@ Business Rule: CheckCourseAccess(course, currentUser)
 ```
 
 #### **Cross-School Content Access**
+
 - **School Boundary Enforcement**: `curUser.SchoolOwnerID != mem.SchoolOwnerID` blocks cross-school access
 - **Teacher-Student Validation**: System validates teacher-student relationships for YourStudent content
 - **Administrative Override**: School administrators can access teacher content within their school
@@ -481,6 +522,7 @@ Business Rule: CheckCourseAccess(course, currentUser)
 ### 4.3 Course Progress & Completion Tracking
 
 #### **Most Recent Content Tracking**
+
 ```
 Business Logic: UpdatedMostRecent(userID, courseID)
 - Last Accessed: Tracks most recently viewed course per user
@@ -489,6 +531,7 @@ Business Logic: UpdatedMostRecent(userID, courseID)
 ```
 
 #### **Course Navigation Logic**
+
 ```
 Business Rule: Get(id, out nextId, out prevId)
 - Sequential Navigation: Automatically determines next/previous course in sequence
@@ -497,6 +540,7 @@ Business Rule: Get(id, out nextId, out prevId)
 ```
 
 #### **Assignment Integration**
+
 - **Homework Due Dates**: `HomeWorkDue` field integrates courses with assignment system
 - **Time Requirements**: `TimeRequire` field sets expected completion time for planning
 - **Assignment Linking**: `AssignmentID` connects courses to specific homework assignments
@@ -505,6 +549,7 @@ Business Rule: Get(id, out nextId, out prevId)
 ### 4.4 Content Quality & Standards Management
 
 #### **Teacher Content Statistics**
+
 ```
 Business Logic: GetTotalTeacherHasSong(userID, approvedStatus, deletedStatus, pendingStatus, songType, skillType, userRole)
 - Content Portfolio Tracking: Monitors teacher content creation and approval rates
@@ -513,6 +558,7 @@ Business Logic: GetTotalTeacherHasSong(userID, approvedStatus, deletedStatus, pe
 ```
 
 #### **Content Type Classification**
+
 - **Song vs Skill Content**: System differentiates between musical pieces and technique instruction
 - **Approval Workflows**: Different approval processes for different content types
 - **Status Management**: Comprehensive status tracking (Approved, Deleted, Pending, Rejected)
@@ -521,12 +567,14 @@ Business Logic: GetTotalTeacherHasSong(userID, approvedStatus, deletedStatus, pe
 ### 4.5 File Management & Media Integration
 
 #### **File Upload & Processing**
+
 - **File Encoding**: `FileEncode` field manages video/audio file processing status
 - **Practice Files**: Separate `PracticeFileUpload` and `PracticeFileEncode` for practice materials
 - **File Naming**: `PracticeFileNameUpload` preserves original file names for user reference
 - **Storage Integration**: Seamless integration with cloud storage and CDN systems
 
 #### **Multimedia Content Rules**
+
 - **Format Standards**: Supported file formats defined by encoding capabilities
 - **Quality Requirements**: Minimum quality standards for video and audio content
 - **File Size Limits**: Maximum file sizes based on user role and school policies
@@ -535,12 +583,14 @@ Business Logic: GetTotalTeacherHasSong(userID, approvedStatus, deletedStatus, pe
 ### 4.6 Course Analytics & Performance Tracking
 
 #### **Engagement Metrics**
+
 - **View Tracking**: `LastWatchedDate` tracks student engagement with content
 - **Completion Analytics**: Course completion rates and time-to-completion metrics
 - **Popular Content**: Most viewed and highest-rated content identification
 - **Student Feedback**: Rating and review systems for continuous improvement
 
 #### **Teacher Performance Metrics**
+
 - **Content Creation Rate**: Number of courses created per time period
 - **Approval Success Rate**: Percentage of submitted content that gets approved
 - **Student Engagement**: Average engagement rates for teacher-created content
@@ -549,9 +599,11 @@ Business Logic: GetTotalTeacherHasSong(userID, approvedStatus, deletedStatus, pe
 ## 5. User Experience & Scenarios
 
 ### 5.1 New Teacher Content Creation Scenario
+
 **Scenario**: An experienced guitar teacher joins the platform and wants to create a comprehensive beginner guitar course.
 
 **Workflow**:
+
 1. Teacher accesses course creation tools and begins curriculum planning
 2. Designs 12-lesson course covering basic chords, strumming patterns, and simple songs
 3. Records video demonstrations for each technique and creates practice exercises
@@ -562,6 +614,7 @@ Business Logic: GetTotalTeacherHasSong(userID, approvedStatus, deletedStatus, pe
 8. First students enroll and begin learning, with teacher monitoring progress and providing feedback
 
 **Success Criteria**:
+
 - Course creation completed within 2 weeks
 - Administrative approval within 3 business days
 - First student enrollments within 1 week of publication
@@ -569,9 +622,11 @@ Business Logic: GetTotalTeacherHasSong(userID, approvedStatus, deletedStatus, pe
 - Teacher reports 50% reduction in individual lesson preparation time
 
 ### 5.2 Student Learning Journey Scenario
+
 **Scenario**: A 16-year-old student wants to learn piano and has basic music reading skills but no piano experience.
 
 **Workflow**:
+
 1. Student browses piano course catalog and finds "Piano Fundamentals for Music Readers"
 2. Reviews course preview content and confirms prerequisite music reading skills
 3. Enrolls in course and gains access to first lesson on proper posture and hand position
@@ -583,6 +638,7 @@ Business Logic: GetTotalTeacherHasSong(userID, approvedStatus, deletedStatus, pe
 9. Enrolls in intermediate course to continue musical development
 
 **Success Criteria**:
+
 - Student completes course within planned 3-month timeframe
 - Achieves 85% or higher on all lesson assessments
 - Demonstrates proficiency in all required skills during final evaluation
@@ -590,9 +646,11 @@ Business Logic: GetTotalTeacherHasSong(userID, approvedStatus, deletedStatus, pe
 - Successfully transitions to intermediate-level coursework
 
 ### 5.3 School Curriculum Management Scenario
-**Scenario**: A music school administrator wants to develop a comprehensive curriculum pathway from beginner to advanced levels across multiple instruments.
+
+**Scenario**: A music school administrator wants to develop a comprehensive curriculum pathway from beginner to levels across multiple instruments.
 
 **Workflow**:
+
 1. Administrator analyzes current course offerings and identifies gaps in curriculum progression
 2. Works with teachers to design integrated learning pathways for each instrument
 3. Establishes prerequisite relationships between courses to ensure proper skill development
@@ -601,14 +659,15 @@ Business Logic: GetTotalTeacherHasSong(userID, approvedStatus, deletedStatus, pe
 6. Launches comprehensive curriculum with clear progression paths for students
 7. Monitors student success rates and course completion statistics
 8. Adjusts curriculum based on performance data and student feedback
-9. Expands offerings to include ensemble courses and advanced performance opportunities
+9. Expands offerings to include ensemble courses and performance opportunities
 
 **Success Criteria**:
+
 - Complete curriculum pathways established for all major instruments
 - 95% of students successfully progress through prerequisite courses
 - 80% improvement in student retention through structured learning paths
 - Teacher satisfaction with curriculum support and content creation tools
-- 25% increase in advanced course enrollments due to improved preparation
+- 25% increase in course enrollments due to improved preparation
 
 ---
 
