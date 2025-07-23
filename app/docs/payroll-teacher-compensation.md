@@ -387,26 +387,22 @@ Business Rules Application:
 #### Workflow Steps
 
 1. **Period Definition**
-
    - Administrator selects payroll start and end dates
    - System validates date ranges and checks for overlapping periods
    - Timezone conversion ensures accurate lesson inclusion
 
 2. **Teacher & Attendance Selection**
-
    - Administrator selects eligible teachers from active roster
    - System identifies teachers without configured wage rates
    - Attendance types selected determine compensation eligibility
 
 3. **Automated Calculation Processing**
-
    - System collects lesson attendance data from scheduling system
    - Wage rates applied based on teacher configuration and rate type
    - Compensation calculated using appropriate formula for each rate type
    - Summary and detail records generated for review
 
 4. **Review & Approval Workflow**
-
    - Administrator reviews calculated amounts and attendance data
    - System provides detailed breakdown for verification
    - Approval changes status from "Waiting Confirmation" to "Active"
@@ -422,13 +418,11 @@ Business Rules Application:
 #### Wage Setup Process
 
 1. **Teacher Onboarding**
-
    - New teacher wage rates configured during setup
    - Rate type selected based on teaching arrangement
    - Validation ensures all active teachers have wage configurations
 
 2. **Rate Modification Process**
-
    - Administrator updates teacher wage rates
    - System validates rate changes and effective dates
    - Historical rate tracking maintains audit trail

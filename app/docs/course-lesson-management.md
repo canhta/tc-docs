@@ -277,7 +277,6 @@ GetByStudentAndDate(studentId, fromDate, toDate, groupId):
 #### Phase 1: Course Planning
 
 1. **Curriculum Design**:
-
    - Teacher identifies learning objectives and target skill levels
    - Creates course outline with lesson progression and milestones
    - Defines prerequisite knowledge and recommended preparation
@@ -292,7 +291,6 @@ GetByStudentAndDate(studentId, fromDate, toDate, groupId):
 #### Phase 2: Content Development
 
 1. **Lesson Creation**:
-
    - Develops individual lesson content with clear learning objectives
    - Creates multimedia materials (video demonstrations, audio examples)
    - Designs practice exercises and skill assessments
@@ -307,14 +305,12 @@ GetByStudentAndDate(studentId, fromDate, toDate, groupId):
 #### Phase 3: Quality Assurance
 
 1. **Internal Review**:
-
    - Teacher conducts self-review for content accuracy and completeness
    - Tests all interactive elements and multimedia functionality
    - Validates learning progression and difficulty scaling
    - Ensures compliance with educational standards
 
 2. **Peer Review** (Optional):
-
    - Other teachers review content for quality and effectiveness
    - Collaborative feedback and improvement suggestions
    - Best practice sharing and knowledge transfer
@@ -329,7 +325,6 @@ GetByStudentAndDate(studentId, fromDate, toDate, groupId):
 #### Phase 4: Publication & Launch
 
 1. **Course Publishing**:
-
    - Content published to platform with appropriate access controls
    - Course catalog updated with new offering and descriptions
    - Enrollment opens for qualified students
@@ -346,7 +341,6 @@ GetByStudentAndDate(studentId, fromDate, toDate, groupId):
 #### Phase 1: Course Discovery & Enrollment
 
 1. **Course Exploration**:
-
    - Student browses course catalog with filtering by instrument, level, and style
    - Reviews course descriptions, learning objectives, and teacher profiles
    - Accesses preview content and sample lessons
@@ -361,7 +355,6 @@ GetByStudentAndDate(studentId, fromDate, toDate, groupId):
 #### Phase 2: Active Learning Engagement
 
 1. **Lesson Progression**:
-
    - Student follows structured lesson sequence with prerequisite enforcement
    - Engages with multimedia content and interactive exercises
    - Completes practice assignments and skill assessments
@@ -376,7 +369,6 @@ GetByStudentAndDate(studentId, fromDate, toDate, groupId):
 #### Phase 3: Assessment & Feedback
 
 1. **Progress Evaluation**:
-
    - Completes lesson assessments and skill demonstrations
    - Receives automated feedback on performance and areas for improvement
    - Participates in teacher-led evaluations and one-on-one feedback sessions

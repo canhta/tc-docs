@@ -370,21 +370,18 @@ END IF
 #### Student Registration Workflow
 
 1. **Initial Registration**:
-
    - Student or parent provides basic information (name, email, phone)
    - System validates email uniqueness and format
    - Account created with temporary password
    - Email verification sent with activation link
 
 2. **Profile Completion**:
-
    - User completes detailed profile information
    - Selects musical interests, instruments, and skill level
    - Agrees to terms of service and privacy policy
    - System assigns appropriate permissions and access levels
 
 3. **School Association**:
-
    - Student selects or is assigned to a music school
    - School administrator approves enrollment
    - Student gains access to school-specific content and teachers
@@ -399,14 +396,12 @@ END IF
 #### Teacher Registration Workflow
 
 1. **Professional Registration**:
-
    - Teacher provides professional credentials and experience
    - System validates teaching qualifications and background
    - Account created with enhanced security requirements
    - Professional verification process initiated
 
 2. **School Partnership**:
-
    - Teacher applies to or is invited by music schools
    - School administrators review teacher qualifications
    - Partnership agreements and compensation terms established
@@ -423,7 +418,6 @@ END IF
 #### Standard Authentication
 
 1. **Login Process**:
-
    - User enters username/email and password
    - System validates credentials against encrypted database
    - Multi-factor authentication for elevated security levels
@@ -438,7 +432,6 @@ END IF
 #### Social Media Authentication
 
 1. **OAuth Integration**:
-
    - User selects social media provider (Google, Facebook, Apple)
    - Redirected to provider's authentication system
    - User grants permission for profile information access
@@ -514,7 +507,6 @@ School-Teacher-Student Relationship Management:
 #### Role Assignment Process
 
 1. **Initial Role Assignment**:
-
    - New users assigned default role based on registration type
    - School administrators can modify roles within their scope
    - System administrators handle cross-school role assignments

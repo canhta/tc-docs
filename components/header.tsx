@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import Search from './search';
+import Link from "next/link";
+import Search from "./search";
 
 export default function Header() {
   return (
@@ -14,14 +14,16 @@ export default function Header() {
               <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-blue-600 to-blue-700 flex items-center justify-center">
                 <span className="text-white font-bold text-sm">TC</span>
               </div>
-              <span className="font-semibold text-gray-900 text-lg">TC Docs</span>
+              <span className="font-semibold text-gray-900 text-lg">
+                TC Docs
+              </span>
             </Link>
           </div>
-          
+
           {/* Search */}
           <div className="flex-1 max-w-lg mx-8">
-            <Search 
-              placeholder="Search documentation..." 
+            <Search
+              placeholder="Search documentation..."
               variant="compact"
               className="w-full"
             />
